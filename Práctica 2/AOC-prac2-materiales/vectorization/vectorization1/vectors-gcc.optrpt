@@ -323,12 +323,12 @@ util.cpp:61:49: missed: statement clobbers memory: _4 = strncmp (_3, name_13(D),
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: ***** Analysis succeeded with vector mode V32QI
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: SLPing BB part
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: Costing subgraph: 
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360ae48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x46915d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_50;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_50;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 MEM[(struct basic_string *)var_17(D)].D.37609._M_allocated_capacity = _45;
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x360aec8
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360aec8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x4691658
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x4691658 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: pretmp_50 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 pretmp_50 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 _45 = D.63166.D.37609._M_allocated_capacity;
@@ -337,12 +337,12 @@ util.cpp:61:49: missed: statement clobbers memory: _4 = strncmp (_3, name_13(D),
   Vector cost: 32
   Scalar cost: 56
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: Costing subgraph: 
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360af48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x46916d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_36;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_36;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 MEM[(struct basic_string *)var_17(D)].D.37609._M_allocated_capacity = _111;
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x360afc8
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360afc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x4691758
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x4691758 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: pretmp_36 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 pretmp_36 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 _111 = D.63166.D.37609._M_allocated_capacity;
@@ -352,12 +352,12 @@ util.cpp:61:49: missed: statement clobbers memory: _4 = strncmp (_3, name_13(D),
   Scalar cost: 56
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: Basic block will be vectorized using SLP
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: Vectorizing SLP tree:
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360ae48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x46915d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_50;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_50;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 MEM[(struct basic_string *)var_17(D)].D.37609._M_allocated_capacity = _45;
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x360aec8
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360aec8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x4691658
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x4691658 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: pretmp_50 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 pretmp_50 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 _45 = D.63166.D.37609._M_allocated_capacity;
@@ -378,12 +378,12 @@ util.cpp:61:49: missed: statement clobbers memory: _4 = strncmp (_3, name_13(D),
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: vectorizing stmts using SLP.
 /usr/include.original/c++/13/bits/basic_string.h:218:26: optimized: basic block part vectorized using 32 byte vectors
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: Vectorizing SLP tree:
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360af48 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x46916d8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_36;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 MEM[(struct basic_string *)var_17(D)]._M_string_length = pretmp_36;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 MEM[(struct basic_string *)var_17(D)].D.37609._M_allocated_capacity = _111;
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x360afc8
-/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x360afc8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	children 0x4691758
+/usr/include.original/c++/13/bits/basic_string.h:218:26: note: node 0x4691758 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: op template: pretmp_36 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 0 pretmp_36 = D.63166._M_string_length;
 /usr/include.original/c++/13/bits/basic_string.h:218:26: note: 	stmt 1 _111 = D.63166.D.37609._M_allocated_capacity;
@@ -1016,12 +1016,12 @@ util.h:20:23: missed: statement clobbers memory: _137 = omp_get_wtime ();
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: ***** Analysis succeeded with vector mode V4DF
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: SLPing BB part
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Costing subgraph: 
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x3a04528 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x2fb2378 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: op template: times.D.97200._M_impl.D.96512._M_start = iftmp.27_153;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 0 times.D.97200._M_impl.D.96512._M_start = iftmp.27_153;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 1 times.D.97200._M_impl.D.96512._M_finish = _546;
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x3a045a8
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x3a045a8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x2fb23f8
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x2fb23f8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	{ iftmp.27_153, _546 }
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Cost model analysis: 
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Cost model analysis for part in loop 1:
@@ -1029,12 +1029,12 @@ util.h:20:23: missed: statement clobbers memory: _137 = omp_get_wtime ();
   Scalar cost: 32
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Basic block will be vectorized using SLP
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Vectorizing SLP tree:
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x3a04528 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x2fb2378 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: op template: times.D.97200._M_impl.D.96512._M_start = iftmp.27_153;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 0 times.D.97200._M_impl.D.96512._M_start = iftmp.27_153;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 1 times.D.97200._M_impl.D.96512._M_finish = _546;
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x3a045a8
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x3a045a8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x2fb23f8
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x2fb23f8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	{ iftmp.27_153, _546 }
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: ------>vectorizing SLP node starting from: times.D.97200._M_impl.D.96512._M_start = iftmp.27_153;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: vect_is_simple_use: operand iftmp.27_153 + _545, type of def: internal
@@ -1065,12 +1065,12 @@ util.h:20:23: missed: statement clobbers memory: _137 = omp_get_wtime ();
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: ***** Analysis succeeded with vector mode V4DF
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: SLPing BB part
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Costing subgraph: 
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x3a045a8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x2fb23f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: op template: flops.D.97200._M_impl.D.96512._M_start = iftmp.27_203;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 0 flops.D.97200._M_impl.D.96512._M_start = iftmp.27_203;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 1 flops.D.97200._M_impl.D.96512._M_finish = _543;
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x3a044a8
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x3a044a8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x2fb22f8
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x2fb22f8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	{ iftmp.27_203, _543 }
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Cost model analysis: 
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Cost model analysis for part in loop 1:
@@ -1078,12 +1078,12 @@ util.h:20:23: missed: statement clobbers memory: _137 = omp_get_wtime ();
   Scalar cost: 32
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Basic block will be vectorized using SLP
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: Vectorizing SLP tree:
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x3a045a8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node 0x2fb23f8 (max_nunits=2, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: op template: flops.D.97200._M_impl.D.96512._M_start = iftmp.27_203;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 0 flops.D.97200._M_impl.D.96512._M_start = iftmp.27_203;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	stmt 1 flops.D.97200._M_impl.D.96512._M_finish = _543;
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x3a044a8
-/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x3a044a8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	children 0x2fb22f8
+/usr/include.original/c++/13/bits/vector.tcc:521:30: note: node (external) 0x2fb22f8 (max_nunits=1, refcnt=1) vector(2) long unsigned int
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: 	{ iftmp.27_203, _543 }
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: ------>vectorizing SLP node starting from: flops.D.97200._M_impl.D.96512._M_start = iftmp.27_203;
 /usr/include.original/c++/13/bits/vector.tcc:521:30: note: vect_is_simple_use: operand iftmp.27_203 + _542, type of def: internal

@@ -21,7 +21,7 @@ if [[ "$REMAKE" == "yes" ]] ; then
     popd &> /dev/null
 fi
 
-VERSIONS_TESTS="${VERSIONS_TESTS:-gcc clang icc}"
+VERSIONS_TESTS="${VERSIONS_TESTS:-gcc}"
 SIZES_TESTS=$(for i in tests/*.in ; do echo "$i" | sed -e 's|^tests/||' -e 's|.in$||' ; done)
 THREADS_MAX="${THREADS_MAX:-$(grep -E processor.: /proc/cpuinfo | wc -l)}"
 THREADS_TESTS="${THREADS_TESTS:-$(seq -s ' ' 1 $THREADS_MAX)}"

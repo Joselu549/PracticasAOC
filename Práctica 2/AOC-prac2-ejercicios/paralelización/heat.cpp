@@ -22,9 +22,12 @@ void solve(Matrix<double>& state, double tolerance, int& iterations, double& las
   Matrix<double> next_state = state;
   iterations = 0;
   double difference;
+
   do {
     difference = 0;
+    #pragma omp parallel for reduction(+:difference)
     for (size_t i = 1; i < state.height - 1; ++i) {
+      #pragma omp parallel for reduction(+:difference)
       for (size_t j = 1; j < state.width - 1; ++j) {
         next_state[i][j] = (state[i][j]
                             + state[i + 1][j    ]  

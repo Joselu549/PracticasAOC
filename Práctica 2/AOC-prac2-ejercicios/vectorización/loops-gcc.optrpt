@@ -1,0 +1,139 @@
+loops.cpp:42:20: note: Considering inline candidate std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>]/1098.
+loops.cpp:42:20: optimized:  Inlining std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>]/1098 into int main(int, char**)/796.
+loops.cpp:42:11: note: Considering inline candidate std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>]/1096.
+loops.cpp:42:11: optimized:  Inlining std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>]/1096 into int main(int, char**)/796.
+/usr/include.original/c++/13/bits/basic_ios.h:450:45: note: Considering inline candidate std::ctype<char>::char_type std::ctype<char>::widen(char) const/772.
+/usr/include.original/c++/13/bits/basic_ios.h:450:45: optimized:  Inlining std::ctype<char>::char_type std::ctype<char>::widen(char) const/772 into std::basic_ios<_CharT, _Traits>::char_type std::basic_ios<_CharT, _Traits>::widen(char) const [with _CharT = char; _Traits = std::char_traits<char>]/1227.
+/usr/include.original/c++/13/bits/basic_ios.h:450:29: note: Considering inline candidate const _Facet& std::__check_facet(const _Facet*) [with _Facet = ctype<char>]/1325.
+/usr/include.original/c++/13/bits/basic_ios.h:450:29: optimized:  Inlining const _Facet& std::__check_facet(const _Facet*) [with _Facet = ctype<char>]/1325 into std::basic_ios<_CharT, _Traits>::char_type std::basic_ios<_CharT, _Traits>::widen(char) const [with _CharT = char; _Traits = std::char_traits<char>]/1227.
+/usr/include.original/c++/13/ostream:736:19: note: Considering inline candidate std::basic_ostream<_CharT, _Traits>& std::flush(basic_ostream<_CharT, _Traits>&) [with _CharT = char; _Traits = char_traits<char>]/1228.
+/usr/include.original/c++/13/ostream:736:19: optimized:  Inlining std::basic_ostream<_CharT, _Traits>& std::flush(basic_ostream<_CharT, _Traits>&) [with _CharT = char; _Traits = char_traits<char>]/1228 into std::basic_ostream<_CharT, _Traits>& std::endl(basic_ostream<_CharT, _Traits>&) [with _CharT = char; _Traits = char_traits<char>]/1097.
+/usr/include.original/c++/13/ostream:736:39: note: Considering inline candidate std::basic_ios<_CharT, _Traits>::char_type std::basic_ios<_CharT, _Traits>::widen(char) const [with _CharT = char; _Traits = std::char_traits<char>]/1227.
+/usr/include.original/c++/13/ostream:736:39: missed:   will not early inline: std::basic_ostream<_CharT, _Traits>& std::endl(basic_ostream<_CharT, _Traits>&) [with _CharT = char; _Traits = char_traits<char>]/1097->std::basic_ios<_CharT, _Traits>::char_type std::basic_ios<_CharT, _Traits>::widen(char) const [with _CharT = char; _Traits = std::char_traits<char>]/1227, growth 8 exceeds --param early-inlining-insns divided by number of calls
+/usr/include.original/c++/13/bits/locale_facets.h:885:23: optimized: speculatively devirtualizing call in std::ctype<char>::char_type std::ctype<char>::_ZNKSt5ctypeIcE5widenEc.part.0(char) const/1628 to virtual std::ctype<char>::char_type std::ctype<char>::do_widen(char) const/777
+/usr/include.original/c++/13/ostream:736:19: missed:   not inlinable: endl.isra/1630 -> std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::put(char_type) [with _CharT = char; _Traits = std::char_traits<char>]/1623, function body not available
+/usr/include.original/c++/13/ostream:758:24: missed:   not inlinable: endl.isra/1630 -> std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::flush() [with _CharT = char; _Traits = std::char_traits<char>]/1626, function body not available
+/usr/include.original/c++/13/bits/basic_ios.h:50:18: missed:   not inlinable: widen.isra/1629 -> void std::__throw_bad_cast()/1624, function body not available
+/usr/include.original/c++/13/bits/locale_facets.h:884:21: missed:   not inlinable: std::ctype<char>::char_type std::ctype<char>::_ZNKSt5ctypeIcE5widenEc.part.0(char) const/1628 -> void std::ctype<char>::_M_widen_init() const/1625, function body not available
+/usr/include.original/c++/13/ostream:223:25: missed:   not inlinable: int main(int, char**)/796 -> std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::_M_insert(_ValueT) [with _ValueT = double; _CharT = char; _Traits = std::char_traits<char>]/1627, function body not available
+/usr/include.original/c++/13/ostream:736:39: optimized:  Inlined widen.isra/1629 into endl.isra/1630 which now has time 42.365654 and size 25, net change of -8.
+optimized:  Inlined std::ctype<char>::char_type std::ctype<char>::_ZNKSt5ctypeIcE5widenEc.part.0(char) const/1628 into widen.isra/1629 which now has time 50.916232 and size 16, net change of -8.
+/usr/include.original/c++/13/ostream:115:13: optimized:  Inlined endl.isra/1630 into int main(int, char**)/796 which now has time 589411.177734 and size 97, net change of -5.
+Unit growth for small function inlining: 125->104 (-17%)
+
+Inlined 8 calls, eliminated 5 functions
+
+/usr/include.original/c++/13/bits/locale_facets.h:884:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_62);
+BB 8 is always executed in loop 1
+BB 7 is always executed in loop 1
+BB 16 is always executed in loop 1
+BB 6 is always executed in loop 1
+BB 17 is always executed in loop 1
+BB 5 is always executed in loop 1
+BB 18 is always executed in loop 1
+BB 4 is always executed in loop 1
+BB 19 is always executed in loop 1
+BB 3 is always executed in loop 1
+BB 9 is always executed in loop 1
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 6's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 5's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 4's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 3's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loops.cpp:17:23: optimized: Loop 2 distributed: split to 2 loops and 0 library calls.
+loops.cpp:15:29: missed: couldn't vectorize loop
+loops.cpp:15:29: missed: not vectorized: loop nest containing two or more consecutive inner loops cannot be vectorized
+loops.cpp:36:23: optimized: loop vectorized using 32 byte vectors
+loops.cpp:32:23: optimized: loop vectorized using 32 byte vectors
+loops.cpp:27:37: missed: couldn't vectorize loop
+loops.cpp:28:21: missed: not vectorized: no vectype for stmt: _13 = A[i_90];
+ scalar_type: double
+loops.cpp:22:23: missed: couldn't vectorize loop
+loops.cpp:23:17: missed: not vectorized: no vectype for stmt: _7 = A[i_89];
+ scalar_type: double
+loops.cpp:17:23: missed: couldn't vectorize loop
+loops.cpp:19:28: missed: not vectorized: no vectype for stmt: _4 = B[i_88];
+ scalar_type: double
+loops.cpp:17:23: optimized: loop vectorized using 32 byte vectors
+loops.cpp:17:23: optimized: loop vectorized using 16 byte vectors
+loops.cpp:12:5: note: vectorized 3 loops in function.
+loops.cpp:17:23: optimized: loop with 2 iterations completely unrolled (header execution count 10737413)
+loops.cpp:12:5: optimized: loop turned into non-loop; it never loops
+/usr/include.original/c++/13/ostream:223:25: missed: statement clobbers memory: _51 = std::basic_ostream<char>::_M_insert<double> (&cout, total_119);
+/usr/include.original/c++/13/bits/locale_facets.h:884:21: missed: statement clobbers memory: std::ctype<char>::_M_widen_init (_62);
+/usr/include.original/c++/13/bits/locale_facets.h:885:23: missed: statement clobbers memory: _75 = OBJ_TYPE_REF(_73;_62->6B) (_62, 10);
+/usr/include.original/c++/13/ostream:736:19: missed: statement clobbers memory: _60 = std::basic_ostream<char>::put (_51, _59);
+/usr/include.original/c++/13/ostream:758:24: missed: statement clobbers memory: std::basic_ostream<char>::flush (_60);
+/usr/include.original/c++/13/bits/basic_ios.h:50:18: missed: statement clobbers memory: std::__throw_bad_cast ();
+loops.cpp:18:12: note: ***** Analysis succeeded with vector mode V4DF
+loops.cpp:18:12: note: SLPing BB part
+loops.cpp:18:12: note: Costing subgraph: 
+loops.cpp:18:12: note: node 0x418ab98 (max_nunits=2, refcnt=1) vector(2) double
+loops.cpp:18:12: note: op template: A[999996] = 6.66664e+5;
+loops.cpp:18:12: note: 	stmt 0 A[999996] = 6.66664e+5;
+loops.cpp:18:12: note: 	stmt 1 A[999997] = 6.66664e+5;
+loops.cpp:18:12: note: 	children 0x418ac18
+loops.cpp:18:12: note: node (constant) 0x418ac18 (max_nunits=1, refcnt=1) vector(2) double
+loops.cpp:18:12: note: 	{ 6.66664e+5, 6.66664e+5 }
+loops.cpp:18:12: note: Cost model analysis: 
+loops.cpp:18:12: note: Cost model analysis for part in loop 1:
+  Vector cost: 32
+  Scalar cost: 32
+loops.cpp:18:12: note: Basic block will be vectorized using SLP
+loops.cpp:18:12: note: Vectorizing SLP tree:
+loops.cpp:18:12: note: node 0x418ab98 (max_nunits=2, refcnt=1) vector(2) double
+loops.cpp:18:12: note: op template: A[999996] = 6.66664e+5;
+loops.cpp:18:12: note: 	stmt 0 A[999996] = 6.66664e+5;
+loops.cpp:18:12: note: 	stmt 1 A[999997] = 6.66664e+5;
+loops.cpp:18:12: note: 	children 0x418ac18
+loops.cpp:18:12: note: node (constant) 0x418ac18 (max_nunits=1, refcnt=1) vector(2) double
+loops.cpp:18:12: note: 	{ 6.66664e+5, 6.66664e+5 }
+loops.cpp:18:12: note: ------>vectorizing SLP node starting from: A[999996] = 6.66664e+5;
+loops.cpp:18:12: note: vect_is_simple_use: operand 6.66664e+5, type of def: constant
+loops.cpp:18:12: note: transform store. ncopies = 1
+loops.cpp:18:12: note: create vector_type-pointer variable to type: vector(2) double  vectorizing a pointer ref: A[999996]
+loops.cpp:18:12: note: created &A[999996]
+loops.cpp:18:12: note: add new stmt: MEM <vector(2) double> [(double *)&A + 7999968B] = { 6.66664e+5, 6.66664e+5 };
+loops.cpp:18:12: note: vectorizing stmts using SLP.
+loops.cpp:18:12: optimized: basic block part vectorized using 32 byte vectors
+loops.cpp:18:12: note: ***** The result for vector mode V32QI would be the same
+BB 8 is always executed in loop 1
+BB 7 is always executed in loop 1
+BB 16 is always executed in loop 1
+BB 6 is always executed in loop 1
+BB 17 is always executed in loop 1
+BB 5 is always executed in loop 1
+BB 18 is always executed in loop 1
+BB 4 is always executed in loop 1
+BB 19 is always executed in loop 1
+BB 3 is always executed in loop 1
+BB 34 is always executed in loop 1
+BB 28 is always executed in loop 1
+BB 9 is always executed in loop 1
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 6's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 5's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 4's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 3's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 7's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loops.cpp:36:23: note: considering unrolling loop 6 at BB 11
+considering unrolling loop with constant number of iterations
+loops.cpp:36:23: optimized: loop unrolled 1 times
+loops.cpp:32:23: note: considering unrolling loop 5 at BB 9
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+loops.cpp:27:37: note: considering unrolling loop 4 at BB 7
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+loops.cpp:22:23: note: considering unrolling loop 3 at BB 5
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+loops.cpp:17:23: note: considering unrolling loop 2 at BB 3
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+loops.cpp:17:23: note: considering unrolling loop 7 at BB 14
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+loops.cpp:15:29: note: considering unrolling loop 1 at BB 13

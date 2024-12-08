@@ -1,0 +1,3981 @@
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 38 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_for_static_init_4
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_for_static_fini
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_reduce_nowait
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_end_reduce_nowait
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_for_static_init_4
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_for_static_fini
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_reduce_nowait
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - Callee:          __kmpc_end_reduce_nowait
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: binning.cpp, Line: 14, Column: 31 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'hoisting '
+  - Inst:            getelementptr
+    DebugLoc:        { File: binning.cpp, Line: 14, Column: 31 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: binning.cpp, Line: 14, Column: 31 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'hoisting '
+  - Inst:            load
+    DebugLoc:        { File: binning.cpp, Line: 14, Column: 31 }
+...
+--- !Passed
+Pass:            loop-idiom
+Name:            ProcessLoopStridedStore
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'Transformed loop-strided store in '
+  - Function:        .omp_outlined._debug__
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 0 }
+  - String:          ' function into a call to '
+  - NewFunction:     llvm.memset.p0.i64
+  - String:          '() intrinsic'
+  - FromBlock:       ''
+  - ToBlock:         ''
+...
+--- !Passed
+Pass:            loop-delete
+Name:            Invariant
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          Loop deleted because it is invariant
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '100'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            ptr
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 38 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            ptr
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     atomicrmw
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 38 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined._debug__
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          ''''
+  - Callee:          .omp_outlined._debug__
+  - String:          ''' inlined into '''
+  - Caller:          .omp_outlined.
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+  - String:          ''''
+  - String:          ': always inline attribute'
+  - String:          ' at callsite '
+  - String:          .omp_outlined.
+  - String:          ':'
+  - Line:            '0'
+  - String:          ':'
+  - Column:          '3'
+  - String:          ';'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - Callee:          __kmpc_for_static_init_4
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined.
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp_outlined.
+Args:
+  - Callee:          __kmpc_for_static_fini
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined.
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - Callee:          __kmpc_reduce_nowait
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined.
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - Callee:          __kmpc_end_reduce_nowait
+  - String:          ' will not be inlined into '
+  - Caller:          .omp_outlined.
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 12, Column: 8 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            ptr
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 38 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'load of type '
+  - Type:            i32
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+Args:
+  - Callee:          __kmpc_fork_call
+  - String:          ' will not be inlined into '
+  - Caller:          _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+    DebugLoc:        { File: binning.cpp, Line: 9, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+Args:
+  - Callee:          __kmpc_fork_call
+  - String:          ' will not be inlined into '
+  - Caller:          _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+    DebugLoc:        { File: binning.cpp, Line: 9, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            InterleavingNotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          the cost-model indicates that interleaving is not beneficial
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'vectorized loop (vectorization width: '
+  - VectorizationFactor: '8'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '1'
+  - String:          ')'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 51 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '12'
+  - String:          ' iterations'
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            UnsafeDep
+DebugLoc:        { File: binning.cpp, Line: 22, Column: 5 }
+Function:        .omp_outlined.
+Args:
+  - String:          'loop not vectorized: '
+  - String:          'unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop'
+  - String:          "\nUnknown data dependence."
+  - String:          ' Memory location is the same as accessed at '
+  - Location:        'binning.cpp:22:7'
+    DebugLoc:        { File: binning.cpp, Line: 22, Column: 7 }
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          loop not vectorized
+...
+--- !Analysis
+Pass:            loop-vectorize
+Name:            InterleavingNotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          the cost-model indicates that interleaving is not beneficial
+...
+--- !Passed
+Pass:            loop-vectorize
+Name:            Vectorized
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          'vectorized loop (vectorization width: '
+  - VectorizationFactor: '8'
+  - String:          ', interleaved count: '
+  - InterleaveCount: '1'
+  - String:          ')'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotBeneficial
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          'List vectorization was possible but not beneficial with cost '
+  - Cost:            '0'
+  - String:          ' >= '
+  - Treshold:        '0'
+...
+--- !Missed
+Pass:            slp-vectorizer
+Name:            NotPossible
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 40 }
+Function:        .omp_outlined.
+Args:
+  - String:          'Cannot SLP vectorize list: vectorization was impossible'
+  - String:          ' with available vectorization factors'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '2'
+  - String:          ' with run-time trip count'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+Function:        .omp_outlined.
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '12'
+  - String:          ' iterations'
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            FullyUnrolled
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - String:          'completely unrolled loop with '
+  - UnrollCount:     '4'
+  - String:          ' iterations'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: binning.cpp, Line: 9, Column: 1 }
+Function:        _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+Args:
+  - NumVRCopies:     '2'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: binning.cpp, Line: 9, Column: 0 }
+Function:        _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: binning.cpp, Line: 9, Column: 0 }
+Function:        _Z12BinParticlesRK13InputDataTypeRA10_A10_i
+Args:
+  - NumInstructions: '7'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '38'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+Function:        .omp.reduction.reduction_func
+Args:
+  - NumInstructions: '54'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            LoopSpillReloadCopies
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 3 }
+Function:        .omp_outlined.
+Args:
+  - NumVRCopies:     '2'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+01'
+  - String:          ' total copies cost '
+  - String:          generated in loop
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 1 }
+Function:        .omp_outlined.
+Args:
+  - NumSpills:       '2'
+  - String:          ' spills '
+  - TotalSpillsCost: '7.843137e-01'
+  - String:          ' total spills cost '
+  - NumReloads:      '2'
+  - String:          ' reloads '
+  - TotalReloadsCost: '7.843137e-01'
+  - String:          ' total reloads cost '
+  - NumVRCopies:     '9'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.407843e+01'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - NumStackBytes:   '504'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '10'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '43'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '37'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '19'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '50'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '200'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: binning.cpp, Line: 0, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: binning.cpp, Line: 11, Column: 0 }
+Function:        .omp_outlined.
+Args:
+  - NumInstructions: '401'
+  - String:          ' instructions in function'
+...

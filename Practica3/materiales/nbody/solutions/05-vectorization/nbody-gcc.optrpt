@@ -1,0 +1,477 @@
+nbody.cpp:132:58: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:132:58: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:131:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:131:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:128:58: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:128:58: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:127:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:127:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:124:58: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:124:58: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:123:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:123:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:120:55: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:120:55: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:119:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:119:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:116:55: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:116:55: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:115:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:115:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:112:55: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:112:55: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:111:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:111:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:35:34: note: Considering inline candidate constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = float; _Up = double]/2567.
+nbody.cpp:35:34: optimized:  Inlining constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = float; _Up = double]/2567 into void MoveParticles_Orig(int, ParticleSet&, float)/2205.
+/usr/include.original/c++/13/bits/random.h:1841:9: note: Considering inline candidate std::uniform_real_distribution<_RealType>::param_type::param_type(_RealType, _RealType) [with _RealType = float]/2750.
+/usr/include.original/c++/13/bits/random.h:1841:9: optimized:  Inlining std::uniform_real_distribution<_RealType>::param_type::param_type(_RealType, _RealType) [with _RealType = float]/2750 into std::uniform_real_distribution<_RealType>::uniform_real_distribution(_RealType, _RealType) [with _RealType = float]/2572.
+/usr/include.original/c++/13/bits/random.h:158:46: note: Considering inline candidate static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2957.
+/usr/include.original/c++/13/bits/random.h:158:46: optimized:  Inlining static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2957 into _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869.
+/usr/include.original/c++/13/bits/random.h:158:46: note: Considering inline candidate static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2958.
+/usr/include.original/c++/13/bits/random.h:158:46: optimized:  Inlining static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2958 into _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0]/2870.
+/usr/include.original/c++/13/bits/random.tcc:340:48: note: Considering inline candidate _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869.
+/usr/include.original/c++/13/bits/random.tcc:340:48: optimized:  Inlining _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869 into void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.tcc:338:42: note: Considering inline candidate _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0]/2870.
+/usr/include.original/c++/13/bits/random.tcc:338:42: optimized:  Inlining _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0]/2870 into void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.tcc:331:44: note: Considering inline candidate _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869.
+/usr/include.original/c++/13/bits/random.tcc:331:44: optimized:  Inlining _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869 into void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.h:546:13: note: Considering inline candidate void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.h:546:13: optimized:  Inlining void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748 into std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::mersenne_twister_engine(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2569.
+/usr/include.original/c++/13/bits/random.tcc:459:13: note: Considering inline candidate void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::_M_gen_rand() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/3017.
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed:   will not early inline: std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999->void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::_M_gen_rand() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/3017, call is cold and code would grow at least by 48
+/usr/include.original/c++/13/bits/random.tcc:3364:29: note: Considering inline candidate std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999.
+/usr/include.original/c++/13/bits/random.tcc:3364:29: missed:   will not early inline: _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963->std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999, growth 16 exceeds --param early-inlining-insns
+/usr/include.original/c++/13/bits/random.tcc:3357:42: note: Considering inline candidate constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int]/2962.
+/usr/include.original/c++/13/bits/random.tcc:3357:42: optimized:  Inlining constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int]/2962 into _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963.
+/usr/include.original/c++/13/bits/random.h:194:38: note: Considering inline candidate _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963.
+/usr/include.original/c++/13/bits/random.h:194:38: missed:   will not early inline: _DInputType std::__detail::_Adaptor<_Engine, _DInputType>::operator()() [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2874->_RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963, growth 9 exceeds --param early-inlining-insns divided by number of calls
+/usr/include.original/c++/13/bits/random.h:1909:52: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876.
+/usr/include.original/c++/13/bits/random.h:1909:52: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1909:40: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876.
+/usr/include.original/c++/13/bits/random.h:1909:40: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1909:30: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::b() const [with _RealType = float]/2875.
+/usr/include.original/c++/13/bits/random.h:1909:30: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::b() const [with _RealType = float]/2875 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1909:19: note: Considering inline candidate _DInputType std::__detail::_Adaptor<_Engine, _DInputType>::operator()() [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2874.
+/usr/include.original/c++/13/bits/random.h:1909:19: optimized:  Inlining _DInputType std::__detail::_Adaptor<_Engine, _DInputType>::operator()() [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2874 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1908:6: note: Considering inline candidate std::__detail::_Adaptor<_Engine, _DInputType>::_Adaptor(_Engine&) [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2872.
+/usr/include.original/c++/13/bits/random.h:1908:6: optimized:  Inlining std::__detail::_Adaptor<_Engine, _DInputType>::_Adaptor(_Engine&) [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2872 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1900:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1900:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:142:42: optimized:   Inlining int atoi(const char*)/20 into int main(int, const char**)/2209 (always_inline).
+nbody.cpp:216:35: note: Considering inline candidate bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208.
+nbody.cpp:216:35: missed:   will not early inline: int main(int, const char**)/2209->bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208, call is cold and code would grow at least by 83
+nbody.cpp:199:18: note: Considering inline candidate void MoveParticles(int, ParticleSet&, float)/2206.
+nbody.cpp:199:18: missed:   will not early inline: int main(int, const char**)/2209->void MoveParticles(int, ParticleSet&, float)/2206, call is cold and code would grow at least by 32
+nbody.cpp:187:21: note: Considering inline candidate void MoveParticles_Orig(int, ParticleSet&, float)/2205.
+nbody.cpp:187:21: missed:   will not early inline: int main(int, const char**)/2209->void MoveParticles_Orig(int, ParticleSet&, float)/2205, call is cold and code would grow at least by 76
+nbody.cpp:166:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:166:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:165:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:165:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:164:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:164:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:163:33: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:163:33: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:162:33: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:162:33: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:161:33: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:161:33: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:159:52: note: Considering inline candidate std::uniform_real_distribution<_RealType>::uniform_real_distribution(_RealType, _RealType) [with _RealType = float]/2572.
+nbody.cpp:159:52: optimized:  Inlining std::uniform_real_distribution<_RealType>::uniform_real_distribution(_RealType, _RealType) [with _RealType = float]/2572 into int main(int, const char**)/2209.
+nbody.cpp:158:22: note: Considering inline candidate std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::mersenne_twister_engine(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2569.
+nbody.cpp:158:22: optimized:  Inlining std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::mersenne_twister_engine(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2569 into int main(int, const char**)/2209.
+nbody.cpp:80:34: missed:   not inlinable: _Z13MoveParticlesiR11ParticleSetf._omp_fn.0/3081 -> float sqrtf(float)/3084, function body not available
+missed:   not inlinable: _Z13MoveParticlesiR11ParticleSetf._omp_fn.0/3081 -> int __builtin_omp_get_thread_num()/3083, function body not available
+missed:   not inlinable: _Z13MoveParticlesiR11ParticleSetf._omp_fn.0/3081 -> int __builtin_omp_get_num_threads()/3082, function body not available
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed:   not inlinable: std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999 -> void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::_M_gen_rand() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/3017, --param max-inline-insns-auto limit reached
+/usr/include.original/c++/13/bits/random.tcc:3368:27: missed:   not inlinable: _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963 -> long int __builtin_expect(long int, long int)/3097, function body not available
+nbody.cpp:244:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:243:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:242:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:241:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:240:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:239:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:238:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:237:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:236:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:235:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:234:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:233:7: missed:   not inlinable: int main(int, const char**)/2209 -> void free(void*)/3095, function body not available
+nbody.cpp:231:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:230:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:229:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:227:9: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:226:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:225:13: missed:   not inlinable: int main(int, const char**)/2209 -> double sqrt(double)/3094, function body not available
+nbody.cpp:219:15: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:218:15: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:217:15: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:216:35: missed:   not inlinable: int main(int, const char**)/2209 -> bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208, --param max-inline-insns-auto limit reached
+nbody.cpp:212:11: missed:   not inlinable: int main(int, const char**)/2209 -> int fflush(FILE*)/3092, function body not available
+nbody.cpp:210:11: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:200:38: missed:   not inlinable: int main(int, const char**)/2209 -> double omp_get_wtime()/3093, function body not available
+nbody.cpp:199:18: missed:   not inlinable: int main(int, const char**)/2209 -> void MoveParticles(int, ParticleSet&, float)/2206, --param max-inline-insns-auto limit reached
+nbody.cpp:198:40: missed:   not inlinable: int main(int, const char**)/2209 -> double omp_get_wtime()/3093, function body not available
+nbody.cpp:195:98: missed:   not inlinable: int main(int, const char**)/2209 -> int fflush(FILE*)/3092, function body not available
+nbody.cpp:195:9: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:191:9: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:191:9: missed:   not inlinable: int main(int, const char**)/2209 -> int omp_get_max_threads()/3090, function body not available
+nbody.cpp:190:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3089, function body not available
+nbody.cpp:187:21: missed:   not inlinable: int main(int, const char**)/2209 -> void MoveParticles_Orig(int, ParticleSet&, float)/2205, --param max-inline-insns-auto limit reached
+nbody.cpp:176:49: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:175:49: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:174:49: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:173:49: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:172:49: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:171:49: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:155:39: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:154:39: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:153:39: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:152:39: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:151:39: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+nbody.cpp:150:39: missed:   not inlinable: int main(int, const char**)/2209 -> void* aligned_alloc(size_t, size_t)/3088, function body not available
+/usr/include/stdlib.h:364:23: missed:   not inlinable: int main(int, const char**)/2209 -> long int strtol(const char*, char**, int)/3096, function body not available
+nbody.cpp:132:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:128:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:124:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:120:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:116:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:112:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleSet&, const ParticleSet&)/2208 -> int printf(const char*, ...)/3087, function body not available
+missed:   not inlinable: void MoveParticles(int, ParticleSet&, float)/2206 -> void __builtin_GOMP_parallel(void (*)(void*), void*, unsigned int, unsigned int)/3085, function body not available
+/usr/include.original/c++/13/cmath:1073:17: missed:   not inlinable: void MoveParticles_Orig(int, ParticleSet&, float)/2205 -> double pow(double, double)/3080, function body not available
+/usr/include.original/c++/13/bits/random.tcc:3364:29: optimized:  Inlined std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999 into _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963 which now has time 42.630000 and size 31, net change of -8.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3116 into int main(int, const char**)/2209 which now has time 4065.327957 and size 304, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3118 into int main(int, const char**)/2209 which now has time 4296.970680 and size 329, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3120 into int main(int, const char**)/2209 which now has time 4528.613411 and size 354, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3122 into int main(int, const char**)/2209 which now has time 4760.256134 and size 379, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3124 into int main(int, const char**)/2209 which now has time 4991.898865 and size 404, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963 into int main(int, const char**)/2209 which now has time 5223.541588 and size 429, net change of -6.
+Unit growth for small function inlining: 701->812 (15%)
+
+Inlined 43 calls, eliminated 19 functions
+
+BB 5 is always executed in loop 1
+BB 4 is always executed in loop 1
+BB 6 is always executed in loop 2
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:62:40: note: Considering guard 5 -> 16 in loop 1
+nbody.cpp:62:40: missed: Block 6 has side effects
+nbody.cpp:77:52: missed: failed: evolution of base is not affine.
+nbody.cpp:78:52: missed: failed: evolution of base is not affine.
+nbody.cpp:79:52: missed: failed: evolution of base is not affine.
+nbody.cpp:62:40: missed: couldn't vectorize loop
+nbody.cpp:62:40: missed: not vectorized: control flow in loop.
+nbody.cpp:71:23: optimized: loop vectorized using 32 byte vectors
+nbody.cpp:71:23: optimized: loop vectorized using 16 byte vectors
+nbody.cpp:61:9: note: vectorized 1 loops in function.
+nbody.cpp:71:23: optimized: loop with 2 iterations completely unrolled (header execution count 57270720)
+nbody.cpp:61:9: optimized: loop turned into non-loop; it never loops
+nbody.cpp:92:20: note: ***** Analysis failed with vector mode V8SI
+nbody.cpp:92:20: note: ***** The result for vector mode V32QI would be the same
+nbody.cpp:92:20: note: ***** Re-trying analysis with vector mode V16QI
+nbody.cpp:92:20: note: ***** Analysis failed with vector mode V16QI
+nbody.cpp:92:20: note: ***** Re-trying analysis with vector mode V8QI
+nbody.cpp:92:20: note: ***** Analysis failed with vector mode V8QI
+nbody.cpp:92:20: note: ***** Re-trying analysis with vector mode V4QI
+nbody.cpp:92:20: note: ***** Analysis failed with vector mode V4QI
+BB 6 is always executed in loop 1
+BB 5 is always executed in loop 1
+BB 8 is always executed in loop 2
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:71:23: note: considering unrolling loop 2 at BB 10
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:92:20: note: considering unrolling loop 1 at BB 5
+BB 6 is always executed in loop 2
+BB 4 is always executed in loop 1
+BB 3 is always executed in loop 1
+BB 5 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 3's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:19:21: missed: Guard edge 5 --> 6 is not around the loop!
+consider run-time aliasing test between *_51 and *_48
+consider run-time aliasing test between *_62 and *_59
+consider run-time aliasing test between *_70 and *_67
+consider run-time aliasing test between *_8 and *_31
+consider run-time aliasing test between *_13 and *_31
+consider run-time aliasing test between *_18 and *_31
+consider run-time aliasing test between *_4 and *_31
+consider run-time aliasing test between *_11 and *_31
+consider run-time aliasing test between *_16 and *_31
+consider run-time aliasing test between *_8 and *_36
+consider run-time aliasing test between *_13 and *_36
+consider run-time aliasing test between *_18 and *_36
+consider run-time aliasing test between *_4 and *_36
+consider run-time aliasing test between *_11 and *_36
+consider run-time aliasing test between *_16 and *_36
+consider run-time aliasing test between *_8 and *_41
+consider run-time aliasing test between *_13 and *_41
+consider run-time aliasing test between *_18 and *_41
+consider run-time aliasing test between *_4 and *_41
+consider run-time aliasing test between *_11 and *_41
+consider run-time aliasing test between *_16 and *_41
+consider run-time aliasing test between *_8 and *_36
+consider run-time aliasing test between *_13 and *_36
+consider run-time aliasing test between *_18 and *_36
+consider run-time aliasing test between *_4 and *_36
+consider run-time aliasing test between *_11 and *_36
+consider run-time aliasing test between *_16 and *_36
+consider run-time aliasing test between *_31 and *_36
+consider run-time aliasing test between *_8 and *_31
+consider run-time aliasing test between *_13 and *_31
+consider run-time aliasing test between *_18 and *_31
+consider run-time aliasing test between *_4 and *_31
+consider run-time aliasing test between *_11 and *_31
+consider run-time aliasing test between *_16 and *_31
+consider run-time aliasing test between *_31 and *_36
+consider run-time aliasing test between *_31 and *_36
+consider run-time aliasing test between *_8 and *_41
+consider run-time aliasing test between *_13 and *_41
+consider run-time aliasing test between *_18 and *_41
+consider run-time aliasing test between *_4 and *_41
+consider run-time aliasing test between *_11 and *_41
+consider run-time aliasing test between *_16 and *_41
+consider run-time aliasing test between *_31 and *_41
+consider run-time aliasing test between *_8 and *_31
+consider run-time aliasing test between *_13 and *_31
+consider run-time aliasing test between *_18 and *_31
+consider run-time aliasing test between *_4 and *_31
+consider run-time aliasing test between *_11 and *_31
+consider run-time aliasing test between *_16 and *_31
+consider run-time aliasing test between *_31 and *_41
+consider run-time aliasing test between *_31 and *_41
+consider run-time aliasing test between *_36 and *_41
+consider run-time aliasing test between *_8 and *_36
+consider run-time aliasing test between *_13 and *_36
+consider run-time aliasing test between *_18 and *_36
+consider run-time aliasing test between *_4 and *_36
+consider run-time aliasing test between *_11 and *_36
+consider run-time aliasing test between *_16 and *_36
+consider run-time aliasing test between *_36 and *_41
+consider run-time aliasing test between *_36 and *_41
+nbody.cpp:51:22: missed: couldn't vectorize loop
+nbody.cpp:52:17: missed: not vectorized: no vectype for stmt: _49 = *_48;
+ scalar_type: float
+nbody.cpp:19:21: missed: couldn't vectorize loop
+nbody.cpp:31:52: missed: not vectorized: no vectype for stmt: _9 = *_8;
+ scalar_type: float
+nbody.cpp:25:23: optimized: loop vectorized using 32 byte vectors
+nbody.cpp:25:23: optimized: loop vectorized using 16 byte vectors
+nbody.cpp:16:6: note: vectorized 1 loops in function.
+nbody.cpp:25:23: optimized: loop with 2 iterations completely unrolled (header execution count 64349125)
+nbody.cpp:16:6: optimized: loop turned into non-loop; it never loops
+nbody.cpp:54:20: note: ***** Analysis failed with vector mode V4DI
+nbody.cpp:54:20: note: ***** The result for vector mode V32QI would be the same
+nbody.cpp:54:20: note: ***** Re-trying analysis with vector mode V16QI
+nbody.cpp:54:20: note: ***** Analysis failed with vector mode V16QI
+nbody.cpp:54:20: note: ***** Re-trying analysis with vector mode V8QI
+nbody.cpp:54:20: note: ***** Analysis failed with vector mode V8QI
+nbody.cpp:54:20: note: ***** Re-trying analysis with vector mode V4QI
+nbody.cpp:54:20: note: ***** Analysis failed with vector mode V4QI
+BB 8 is always executed in loop 2
+BB 21 is always executed in loop 1
+BB 7 is always executed in loop 1
+BB 5 is always executed in loop 3
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 3's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:51:22: note: considering unrolling loop 2 at BB 17
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:25:23: note: considering unrolling loop 3 at BB 12
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:19:21: note: considering unrolling loop 1 at BB 14
+BB 3 is always executed in loop 2
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+consider run-time aliasing test between *_7 and *_4
+consider run-time aliasing test between *_15 and *_12
+consider run-time aliasing test between *_23 and *_20
+nbody.cpp:100:22: missed: couldn't vectorize loop
+nbody.cpp:101:17: missed: not vectorized: no vectype for stmt: _5 = *_4;
+ scalar_type: float
+nbody.cpp:58:6: note: vectorized 0 loops in function.
+nbody.cpp:58:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13MoveParticlesiR11ParticleSetf._omp_fn.0, &.omp_data_o.2, 0, 0);
+nbody.cpp:103:20: note: ***** Analysis failed with vector mode V8SF
+nbody.cpp:103:20: note: ***** The result for vector mode V32QI would be the same
+nbody.cpp:103:20: note: ***** Re-trying analysis with vector mode V16QI
+nbody.cpp:103:20: note: ***** Analysis failed with vector mode V16QI
+nbody.cpp:103:20: note: ***** Re-trying analysis with vector mode V8QI
+nbody.cpp:103:20: note: ***** Analysis failed with vector mode V8QI
+nbody.cpp:103:20: note: ***** Re-trying analysis with vector mode V4QI
+nbody.cpp:103:20: note: ***** Analysis failed with vector mode V4QI
+BB 4 is always executed in loop 2
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+nbody.cpp:100:22: note: considering unrolling loop 2 at BB 4
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+BB 3 is always executed in loop 1
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:111:5: missed: couldn't vectorize loop
+nbody.cpp:111:5: missed: not vectorized: control flow in loop.
+nbody.cpp:109:6: note: vectorized 0 loops in function.
+nbody.cpp:115:18: missed: failed: evolution of base is not affine.
+nbody.cpp:115:27: missed: failed: evolution of base is not affine.
+nbody.cpp:119:18: missed: failed: evolution of base is not affine.
+nbody.cpp:119:27: missed: failed: evolution of base is not affine.
+nbody.cpp:123:19: missed: failed: evolution of base is not affine.
+nbody.cpp:123:29: missed: failed: evolution of base is not affine.
+nbody.cpp:127:19: missed: failed: evolution of base is not affine.
+nbody.cpp:127:29: missed: failed: evolution of base is not affine.
+nbody.cpp:131:19: missed: failed: evolution of base is not affine.
+nbody.cpp:131:29: missed: failed: evolution of base is not affine.
+nbody.cpp:132:13: missed: statement clobbers memory: printf ("%d vz %g %g %g\n", i_83, _86, _85, _84);
+nbody.cpp:128:13: missed: statement clobbers memory: printf ("%d vy %g %g %g\n", i_87, _70, _69, _68);
+nbody.cpp:124:13: missed: statement clobbers memory: printf ("%d vx %g %g %g\n", i_89, _56, _55, _54);
+nbody.cpp:120:13: missed: statement clobbers memory: printf ("%d z %g %g %g\n", i_95, _42, _41, _40);
+nbody.cpp:116:13: missed: statement clobbers memory: printf ("%d y %g %g %g\n", i_109, _28, _27, _26);
+nbody.cpp:112:13: missed: statement clobbers memory: printf ("%d x %g %g %g\n", i_110, _14, _13, _12);
+nbody.cpp:112:13: note: ***** Analysis failed with vector mode V4DI
+nbody.cpp:112:13: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V4DI
+BB 3 is always executed in loop 1
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:110:20: note: considering unrolling loop 1 at BB 4
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+BB 8 is always executed in loop 2
+BB 6 is always executed in loop 2
+BB 5 is always executed in loop 1
+BB 3 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+/usr/include.original/c++/13/bits/random.tcc:412:42: optimized: loop vectorized using 32 byte vectors
+/usr/include.original/c++/13/bits/random.tcc:404:32: optimized: loop vectorized using 32 byte vectors
+/usr/include.original/c++/13/bits/random.tcc:404:32: optimized: loop vectorized using 16 byte vectors
+/usr/include.original/c++/13/bits/random.tcc:397:5: note: vectorized 2 loops in function.
+/usr/include.original/c++/13/bits/random.tcc:404:32: optimized: loop turned into non-loop; it never loops
+/usr/include.original/c++/13/bits/random.tcc:397:5: optimized: loop turned into non-loop; it never loops
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V4DI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** The result for vector mode V32QI would be the same
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V16QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V16QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V8QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V4QI
+/usr/include.original/c++/13/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode V4QI
+BB 6 is always executed in loop 2
+BB 3 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+/usr/include.original/c++/13/bits/random.tcc:412:42: note: considering unrolling loop 2 at BB 5
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+/usr/include.original/c++/13/bits/random.tcc:404:32: note: considering unrolling loop 1 at BB 3
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+BB 35 is always executed in loop 3
+BB 33 is always executed in loop 2
+BB 7 is always executed in loop 1
+BB 5 is always executed in loop 4
+loop 3's coldest_outermost_loop is 3, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 4's coldest_outermost_loop is 4, hotter_than_inner_loop is NULL
+nbody.cpp:178:20: optimized: Loop 2 distributed: split to 0 loops and 6 library calls.
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+nbody.cpp:198:5: missed: couldn't vectorize loop
+nbody.cpp:198:5: missed: not vectorized: control flow in loop.
+nbody.cpp:160:20: missed: couldn't vectorize loop
+nbody.cpp:160:20: missed: not vectorized: control flow in loop.
+/usr/include.original/c++/13/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include.original/c++/13/bits/random.tcc:335:14: missed: not vectorized: no vectype for stmt: __x_183 = MEM[(struct mersenne_twister_engine *)&generator]._M_x[_182];
+ scalar_type: long unsigned int
+nbody.cpp:139:5: note: vectorized 0 loops in function.
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+nbody.cpp:198:40: missed: statement clobbers memory: tStart_146 = omp_get_wtime ();
+/usr/include/stdlib.h:364:23: missed: statement clobbers memory: _179 = strtol (_1, 0B, 10);
+nbody.cpp:150:39: missed: statement clobbers memory: _4 = aligned_alloc (32, _3);
+nbody.cpp:151:39: missed: statement clobbers memory: _5 = aligned_alloc (32, _3);
+nbody.cpp:152:39: missed: statement clobbers memory: _8 = aligned_alloc (32, _3);
+nbody.cpp:153:39: missed: statement clobbers memory: _9 = aligned_alloc (32, _3);
+nbody.cpp:154:39: missed: statement clobbers memory: _10 = aligned_alloc (32, _3);
+nbody.cpp:155:39: missed: statement clobbers memory: _11 = aligned_alloc (32, _3);
+nbody.cpp:171:49: missed: statement clobbers memory: _257 = aligned_alloc (32, _3);
+nbody.cpp:172:49: missed: statement clobbers memory: _424 = aligned_alloc (32, _3);
+nbody.cpp:173:49: missed: statement clobbers memory: _266 = aligned_alloc (32, _3);
+nbody.cpp:174:49: missed: statement clobbers memory: _235 = aligned_alloc (32, _3);
+nbody.cpp:175:49: missed: statement clobbers memory: _221 = aligned_alloc (32, _3);
+nbody.cpp:176:49: missed: statement clobbers memory: _260 = aligned_alloc (32, _3);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+nbody.cpp:171:49: missed: statement clobbers memory: _20 = aligned_alloc (32, _3);
+nbody.cpp:172:49: missed: statement clobbers memory: _21 = aligned_alloc (32, _3);
+nbody.cpp:173:49: missed: statement clobbers memory: _22 = aligned_alloc (32, _3);
+nbody.cpp:174:49: missed: statement clobbers memory: _23 = aligned_alloc (32, _3);
+nbody.cpp:175:49: missed: statement clobbers memory: _24 = aligned_alloc (32, _3);
+nbody.cpp:176:49: missed: statement clobbers memory: _25 = aligned_alloc (32, _3);
+nbody.cpp:179:29: missed: statement clobbers memory: __builtin_memcpy (_20, _4, _562);
+nbody.cpp:180:29: missed: statement clobbers memory: __builtin_memcpy (_21, _5, _555);
+nbody.cpp:181:29: missed: statement clobbers memory: __builtin_memcpy (_22, _8, _551);
+nbody.cpp:182:30: missed: statement clobbers memory: __builtin_memcpy (_23, _9, _547);
+nbody.cpp:183:30: missed: statement clobbers memory: __builtin_memcpy (_24, _10, _543);
+nbody.cpp:184:30: missed: statement clobbers memory: __builtin_memcpy (_25, _11, _539);
+nbody.cpp:187:21: missed: statement clobbers memory: MoveParticles_Orig (iftmp.11_85, &particle_reference, 9.99999977648258209228515625e-3);
+nbody.cpp:190:9: missed: statement clobbers memory: __builtin_puts (&"\n\x1b[1mNBODY Version 04\x1b[0m"[0]);
+nbody.cpp:191:9: missed: statement clobbers memory: _46 = omp_get_max_threads ();
+nbody.cpp:191:9: missed: statement clobbers memory: printf ("\nPropagating %d particles using %d threads on %s...\n\n", iftmp.11_85, _46, "CPU");
+nbody.cpp:195:9: missed: statement clobbers memory: printf ("\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.cpp:195:98: missed: statement clobbers memory: fflush (stdout.12_47);
+nbody.cpp:198:40: missed: statement clobbers memory: tStart_146 = omp_get_wtime ();
+nbody.cpp:199:18: missed: statement clobbers memory: MoveParticles (iftmp.11_85, &particle, 9.99999977648258209228515625e-3);
+nbody.cpp:200:38: missed: statement clobbers memory: tEnd_149 = omp_get_wtime ();
+nbody.cpp:210:11: missed: statement clobbers memory: printf ("%5d %10.3e %10.3e %8.1f %s\n", step_203, _63, _67, _64, "*");
+nbody.cpp:212:11: missed: statement clobbers memory: fflush (stdout.14_68);
+nbody.cpp:216:35: missed: statement clobbers memory: _157 = compare_particle_arrays (iftmp.11_85, &particle_reference, &particle);
+nbody.cpp:217:15: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:218:15: missed: statement clobbers memory: __builtin_puts (&"\x1b[31mDO PANIC: The final result is wrong \x1b[0m"[0]);
+nbody.cpp:219:15: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:210:11: missed: statement clobbers memory: printf ("%5d %10.3e %10.3e %8.1f %s\n", step_203, _56, _88, _57, "");
+nbody.cpp:212:11: missed: statement clobbers memory: fflush (stdout.14_274);
+nbody.cpp:226:9: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:227:9: missed: statement clobbers memory: printf ("\x1b[1m%s %4s \x1b[32m%10.1f +- %.1f GFLOP/s\x1b[0m\n", "Average performance:", "", rate_126, dRate_127);
+nbody.cpp:229:9: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:230:9: missed: statement clobbers memory: __builtin_puts (&"* - warm-up, not included in average."[0]);
+nbody.cpp:231:9: missed: statement clobbers memory: __builtin_puts (&"The final result after 1 iteration was correct.\n"[0]);
+nbody.cpp:233:7: missed: statement clobbers memory: free (_72);
+nbody.cpp:234:7: missed: statement clobbers memory: free (_73);
+nbody.cpp:235:7: missed: statement clobbers memory: free (_74);
+nbody.cpp:236:7: missed: statement clobbers memory: free (_75);
+nbody.cpp:237:7: missed: statement clobbers memory: free (_76);
+nbody.cpp:238:7: missed: statement clobbers memory: free (_77);
+nbody.cpp:239:7: missed: statement clobbers memory: free (_230);
+nbody.cpp:240:7: missed: statement clobbers memory: free (_215);
+nbody.cpp:241:7: missed: statement clobbers memory: free (_224);
+nbody.cpp:242:7: missed: statement clobbers memory: free (_419);
+nbody.cpp:243:7: missed: statement clobbers memory: free (_204);
+nbody.cpp:244:7: missed: statement clobbers memory: free (_239);
+nbody.cpp:207:13: note: ***** Analysis failed with vector mode V4DI
+nbody.cpp:207:13: note: ***** The result for vector mode V32QI would be the same
+nbody.cpp:207:13: note: ***** Re-trying analysis with vector mode V16QI
+nbody.cpp:207:13: note: ***** Analysis failed with vector mode V16QI
+nbody.cpp:207:13: note: ***** Re-trying analysis with vector mode V8QI
+nbody.cpp:207:13: note: ***** Analysis failed with vector mode V8QI
+nbody.cpp:207:13: note: ***** Re-trying analysis with vector mode V4QI
+nbody.cpp:207:13: note: ***** Analysis failed with vector mode V4QI
+BB 35 is always executed in loop 3
+BB 7 is always executed in loop 1
+BB 5 is always executed in loop 4
+loop 3's coldest_outermost_loop is 3, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 4's coldest_outermost_loop is 4, hotter_than_inner_loop is NULL
+nbody.cpp:198:5: note: considering unrolling loop 3 at BB 26
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:161:5: note: considering unrolling loop 1 at BB 8
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+/usr/include.original/c++/13/bits/random.tcc:333:32: note: considering unrolling loop 4 at BB 5
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations

@@ -1,0 +1,1155 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+Intel(R) C++ Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.10.0 Build 20230609_000000
+
+Compiler options: -g -std=c++20 -Wall -xHost -O2 -qopenmp -o nbody-icc -qopt-report=5 -qopt-report-file=nbody-icc.optrpt
+
+    Report from: Interprocedural optimizations [ipo]
+
+  WHOLE PROGRAM (SAFE) [EITHER METHOD]: false
+  WHOLE PROGRAM (SEEN) [TABLE METHOD]: false
+  WHOLE PROGRAM (READ) [OBJECT READER METHOD]: false
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+In the inlining report below:
+   "sz" refers to the "size" of the routine. The smaller a routine's size,
+      the more likely it is to be inlined.
+   "isz" refers to the "inlined size" of the routine. This is the amount
+      the calling routine will grow if the called routine is inlined into it.
+      The compiler generally limits the amount a routine can grow by having
+      routines inlined into it.
+
+Begin optimization report for: main(int, const char **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (main(int, const char **)) [1/27=3.7%] nbody.cpp(139,45)
+  -> INLINE (MANUAL): (142,38) atoi(const char *) noexcept(true) (isz = 7) (sz = 14)
+    -> EXTERN: /usr/include/stdlib.h:(363,16) strtol(const char *, char **, int) noexcept(true)
+  -> EXTERN: (150,26) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (151,26) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (152,26) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (153,26) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (154,26) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (155,26) aligned_alloc(size_t, size_t) noexcept(true)
+  -> INLINE (MANUAL): (158,21) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::mersenne_twister_engine(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *, std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::result_type) (isz = 53) (sz = 60)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(531,9) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::seed(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *, std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::result_type) (isz = 53) (sz = 60)
+      -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(327,17) std::__detail::__mod<uint_fast32_t, 4294967296UL, 1UL, 0UL>(uint_fast32_t) (isz = 5) (sz = 12)
+        -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(156,13) std::__detail::_Mod<uint_fast32_t, 4294967296UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t) (isz = 3) (sz = 10)
+      -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(335,11) std::__detail::__mod<uint_fast32_t, 624UL, 1UL, 0UL>(uint_fast32_t) (isz = 5) (sz = 12)
+        -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(156,13) std::__detail::_Mod<uint_fast32_t, 624UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t) (isz = 3) (sz = 10)
+      -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(336,16) std::__detail::__mod<uint_fast32_t, 4294967296UL, 1UL, 0UL>(uint_fast32_t) (isz = 5) (sz = 12)
+        -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(156,13) std::__detail::_Mod<uint_fast32_t, 4294967296UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t) (isz = 3) (sz = 10)
+  -> INLINE (MANUAL): (159,51) std::uniform_real_distribution<float>::uniform_real_distribution(std::uniform_real_distribution<float> *, float, float) (isz = 6) (sz = 15)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1801,7) std::uniform_real_distribution<float>::param_type::param_type(std::uniform_real_distribution<float>::param_type *, float, float) (isz = 4) (sz = 12)
+  -> INLINE (MANUAL): (161,33) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &) (isz = 208) (sz = 217)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1861,24) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &) (isz = 204) (sz = 215)
+      -> INLINE (MANUAL): (1869,14) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &) (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,19) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *) (isz = 188) (sz = 195)
+        -> INLINE (MANUAL): (190,11) std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &) (isz = 186) (sz = 193)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,30) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,46) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3355,26) std::max<std::size_t>(const std::size_t &, const std::size_t &) (isz = 2) (sz = 12)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3362,29) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 123) (sz = 130)
+            -> INLINE (MANUAL): (456,2) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 95) (sz = 100)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3369,12) std::nextafter(float, float) (isz = 1) (sz = 10)
+            -> EXTERN: /usr/include/c++/13/cmath:(1661,12) __builtin_nextafterf(float, float)
+      -> INLINE (MANUAL): (1870,29) std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,39) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,51) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+  -> INLINE (MANUAL): (162,33) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &) (isz = 208) (sz = 217)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1861,24) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &) (isz = 204) (sz = 215)
+      -> INLINE (MANUAL): (1869,14) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &) (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,19) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *) (isz = 188) (sz = 195)
+        -> INLINE (MANUAL): (190,11) std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &) (isz = 186) (sz = 193)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,30) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,46) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3355,26) std::max<std::size_t>(const std::size_t &, const std::size_t &) (isz = 2) (sz = 12)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3362,29) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 123) (sz = 130)
+            -> INLINE (MANUAL): (456,2) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 95) (sz = 100)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3369,12) std::nextafter(float, float) (isz = 1) (sz = 10)
+            -> EXTERN: /usr/include/c++/13/cmath:(1661,12) __builtin_nextafterf(float, float)
+      -> INLINE (MANUAL): (1870,29) std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,39) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,51) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+  -> INLINE (MANUAL): (163,33) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &) (isz = 208) (sz = 217)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1861,24) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &) (isz = 204) (sz = 215)
+      -> INLINE (MANUAL): (1869,14) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &) (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,19) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *) (isz = 188) (sz = 195)
+        -> INLINE (MANUAL): (190,11) std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &) (isz = 186) (sz = 193)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,30) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,46) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3355,26) std::max<std::size_t>(const std::size_t &, const std::size_t &) (isz = 2) (sz = 12)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3362,29) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 123) (sz = 130)
+            -> INLINE (MANUAL): (456,2) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 95) (sz = 100)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3369,12) std::nextafter(float, float) (isz = 1) (sz = 10)
+            -> EXTERN: /usr/include/c++/13/cmath:(1661,12) __builtin_nextafterf(float, float)
+      -> INLINE (MANUAL): (1870,29) std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,39) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,51) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+  -> INLINE (MANUAL): (164,34) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &) (isz = 208) (sz = 217)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1861,24) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &) (isz = 204) (sz = 215)
+      -> INLINE (MANUAL): (1869,14) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &) (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,19) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *) (isz = 188) (sz = 195)
+        -> INLINE (MANUAL): (190,11) std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &) (isz = 186) (sz = 193)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,30) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,46) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3355,26) std::max<std::size_t>(const std::size_t &, const std::size_t &) (isz = 2) (sz = 12)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3362,29) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 123) (sz = 130)
+            -> INLINE (MANUAL): (456,2) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 95) (sz = 100)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3369,12) std::nextafter(float, float) (isz = 1) (sz = 10)
+            -> EXTERN: /usr/include/c++/13/cmath:(1661,12) __builtin_nextafterf(float, float)
+      -> INLINE (MANUAL): (1870,29) std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,39) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,51) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+  -> INLINE (MANUAL): (165,34) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &) (isz = 208) (sz = 217)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1861,24) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &) (isz = 204) (sz = 215)
+      -> INLINE (MANUAL): (1869,14) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &) (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,19) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *) (isz = 188) (sz = 195)
+        -> INLINE (MANUAL): (190,11) std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &) (isz = 186) (sz = 193)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,30) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,46) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3355,26) std::max<std::size_t>(const std::size_t &, const std::size_t &) (isz = 2) (sz = 12)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3362,29) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 123) (sz = 130)
+            -> INLINE (MANUAL): (456,2) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 95) (sz = 100)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3369,12) std::nextafter(float, float) (isz = 1) (sz = 10)
+            -> EXTERN: /usr/include/c++/13/cmath:(1661,12) __builtin_nextafterf(float, float)
+      -> INLINE (MANUAL): (1870,29) std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,39) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,51) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+  -> INLINE (MANUAL): (166,34) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &) (isz = 208) (sz = 217)
+    -> INLINE (MANUAL): /usr/include/c++/13/bits/random.h:(1861,24) std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &) (isz = 204) (sz = 215)
+      -> INLINE (MANUAL): (1869,14) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &) (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,19) std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *) (isz = 188) (sz = 195)
+        -> INLINE (MANUAL): (190,11) std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &) (isz = 186) (sz = 193)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,30) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3354,46) std::log(long double) (isz = 1) (sz = 8)
+            -> EXTERN: /usr/include/c++/13/cmath:(343,12) __builtin_logl(long double)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3355,26) std::max<std::size_t>(const std::size_t &, const std::size_t &) (isz = 2) (sz = 12)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3362,29) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 123) (sz = 130)
+            -> INLINE (MANUAL): (456,2) std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *) (isz = 95) (sz = 100)
+          -> INLINE (MANUAL): /usr/include/c++/13/bits/random.tcc:(3369,12) std::nextafter(float, float) (isz = 1) (sz = 10)
+            -> EXTERN: /usr/include/c++/13/cmath:(1661,12) __builtin_nextafterf(float, float)
+      -> INLINE (MANUAL): (1870,29) std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,39) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+      -> INLINE (MANUAL): (1870,51) std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const (isz = 0) (sz = 6)
+  -> EXTERN: (171,36) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (172,36) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (173,36) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (174,36) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (175,36) aligned_alloc(size_t, size_t) noexcept(true)
+  -> EXTERN: (176,36) aligned_alloc(size_t, size_t) noexcept(true)
+  -> INLINE: (187,3) MoveParticles_Orig(int, ParticleSet &, float) (isz = 171) (sz = 180)
+    -> INLINE (MANUAL): (35,31) std::pow<float, double>(float, double) (isz = 2) (sz = 11)
+      -> EXTERN: /usr/include/c++/13/cmath:(418,14) pow(double, double) noexcept(true)
+  -> EXTERN: (190,3) printf(const char *, ...)
+  -> EXTERN: (191,3) printf(const char *, ...)
+  -> EXTERN: (192,15) omp_get_max_threads()
+  -> EXTERN: (195,3) printf(const char *, ...)
+  -> EXTERN: (195,92) fflush(FILE *)
+  -> EXTERN: (198,27) omp_get_wtime()
+  -> (199,5) MoveParticles(int, ParticleSet &, float) (isz = 188) (sz = 197)
+     [[ Inlining inhibited by overrideable criterion  <1>]]
+  -> EXTERN: (200,25) omp_get_wtime()
+  -> EXTERN: (210,5) printf(const char *, ...)
+  -> EXTERN: (212,5) fflush(FILE *)
+  -> (216,12) compare_particle_arrays(int, const ParticleSet &, const ParticleSet &) (isz = 285) (sz = 302)
+     [[ Inlining would exceed -inline-max-size value (302>230) <2>]]
+  -> EXTERN: (217,9) printf(const char *, ...)
+  -> EXTERN: (218,9) printf(const char *, ...)
+  -> EXTERN: (219,9) printf(const char *, ...)
+  -> EXTERN: (226,3) printf(const char *, ...)
+  -> EXTERN: (227,3) printf(const char *, ...)
+  -> EXTERN: (229,3) printf(const char *, ...)
+  -> EXTERN: (230,3) printf(const char *, ...)
+  -> EXTERN: (231,3) printf(const char *, ...)
+  -> EXTERN: (233,3) free(void *) noexcept(true)
+  -> EXTERN: (234,3) free(void *) noexcept(true)
+  -> EXTERN: (235,3) free(void *) noexcept(true)
+  -> EXTERN: (236,3) free(void *) noexcept(true)
+  -> EXTERN: (237,3) free(void *) noexcept(true)
+  -> EXTERN: (238,3) free(void *) noexcept(true)
+  -> EXTERN: (239,3) free(void *) noexcept(true)
+  -> EXTERN: (240,3) free(void *) noexcept(true)
+  -> EXTERN: (241,3) free(void *) noexcept(true)
+  -> EXTERN: (242,3) free(void *) noexcept(true)
+  -> EXTERN: (243,3) free(void *) noexcept(true)
+  -> EXTERN: (244,3) free(void *) noexcept(true)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(330,7) inlined into nbody.cpp(158,21)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+   remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__i] (336:4) and generator._M_x[__i-1] (332:20)
+   remark #25456: Number of Array Refs Scalar Replaced In Loop: 1
+LOOP END
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(3360,7) inlined into nbody.cpp(161,33)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(161,33)
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 4
+      remark #15309: vectorization support: normalized vectorization overhead 0.188
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15450: unmasked unaligned unit stride loads: 2 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 19 
+      remark #15477: vector cost: 8.000 
+      remark #15478: estimated potential speedup: 2.310 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=56
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(409,7) inlined into nbody.cpp(161,33)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__k] (413:4) and generator._M_x[__k+?] (413:4)
+      remark #15346: vector dependence: assumed ANTI dependence between generator._M_x[__k+?] (413:4) and generator._M_x[__k] (413:4)
+      remark #25438: unrolled without remainder by 2  
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(161,33)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15305: vectorization support: vector length 2
+      remark #15427: loop was completely unrolled
+      remark #15309: vectorization support: normalized vectorization overhead 0.267
+      remark #25436: completely unrolled by 3  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(3360,7) inlined into nbody.cpp(162,33)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(162,33)
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 4
+      remark #15309: vectorization support: normalized vectorization overhead 0.188
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15450: unmasked unaligned unit stride loads: 2 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 19 
+      remark #15477: vector cost: 8.000 
+      remark #15478: estimated potential speedup: 2.310 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=56
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(409,7) inlined into nbody.cpp(162,33)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__k] (413:4) and generator._M_x[__k+?] (413:4)
+      remark #15346: vector dependence: assumed ANTI dependence between generator._M_x[__k+?] (413:4) and generator._M_x[__k] (413:4)
+      remark #25438: unrolled without remainder by 2  
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(162,33)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15305: vectorization support: vector length 2
+      remark #15427: loop was completely unrolled
+      remark #15309: vectorization support: normalized vectorization overhead 0.267
+      remark #25436: completely unrolled by 3  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(3360,7) inlined into nbody.cpp(163,33)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(163,33)
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 4
+      remark #15309: vectorization support: normalized vectorization overhead 0.188
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15450: unmasked unaligned unit stride loads: 2 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 19 
+      remark #15477: vector cost: 8.000 
+      remark #15478: estimated potential speedup: 2.310 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=56
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(409,7) inlined into nbody.cpp(163,33)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__k] (413:4) and generator._M_x[__k+?] (413:4)
+      remark #15346: vector dependence: assumed ANTI dependence between generator._M_x[__k+?] (413:4) and generator._M_x[__k] (413:4)
+      remark #25438: unrolled without remainder by 2  
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(163,33)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15305: vectorization support: vector length 2
+      remark #15427: loop was completely unrolled
+      remark #15309: vectorization support: normalized vectorization overhead 0.267
+      remark #25436: completely unrolled by 3  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(3360,7) inlined into nbody.cpp(164,34)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(164,34)
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 4
+      remark #15309: vectorization support: normalized vectorization overhead 0.188
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15450: unmasked unaligned unit stride loads: 2 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 19 
+      remark #15477: vector cost: 8.000 
+      remark #15478: estimated potential speedup: 2.310 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=56
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(409,7) inlined into nbody.cpp(164,34)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__k] (413:4) and generator._M_x[__k+?] (413:4)
+      remark #15346: vector dependence: assumed ANTI dependence between generator._M_x[__k+?] (413:4) and generator._M_x[__k] (413:4)
+      remark #25438: unrolled without remainder by 2  
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(164,34)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15305: vectorization support: vector length 2
+      remark #15427: loop was completely unrolled
+      remark #15309: vectorization support: normalized vectorization overhead 0.267
+      remark #25436: completely unrolled by 3  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(3360,7) inlined into nbody.cpp(165,34)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(165,34)
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 4
+      remark #15309: vectorization support: normalized vectorization overhead 0.188
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15450: unmasked unaligned unit stride loads: 2 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 19 
+      remark #15477: vector cost: 8.000 
+      remark #15478: estimated potential speedup: 2.310 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=56
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(409,7) inlined into nbody.cpp(165,34)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__k] (413:4) and generator._M_x[__k+?] (413:4)
+      remark #15346: vector dependence: assumed ANTI dependence between generator._M_x[__k+?] (413:4) and generator._M_x[__k] (413:4)
+      remark #25438: unrolled without remainder by 2  
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(165,34)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15305: vectorization support: vector length 2
+      remark #15427: loop was completely unrolled
+      remark #15309: vectorization support: normalized vectorization overhead 0.267
+      remark #25436: completely unrolled by 3  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(3360,7) inlined into nbody.cpp(166,34)
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(166,34)
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 4
+      remark #15309: vectorization support: normalized vectorization overhead 0.188
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 1 
+      remark #15449: unmasked aligned unit stride stores: 1 
+      remark #15450: unmasked unaligned unit stride loads: 2 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 19 
+      remark #15477: vector cost: 8.000 
+      remark #15478: estimated potential speedup: 2.310 
+      remark #15488: --- end vector cost summary ---
+      remark #25015: Estimate of max trip count of loop=56
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(409,7) inlined into nbody.cpp(166,34)
+      remark #15344: loop was not vectorized: vector dependence prevents vectorization
+      remark #15346: vector dependence: assumed FLOW dependence between generator._M_x[__k] (413:4) and generator._M_x[__k+?] (413:4)
+      remark #15346: vector dependence: assumed ANTI dependence between generator._M_x[__k+?] (413:4) and generator._M_x[__k] (413:4)
+      remark #25438: unrolled without remainder by 2  
+   LOOP END
+
+   LOOP BEGIN at /usr/include/c++/13/bits/random.tcc(455,7) inlined into nbody.cpp(166,34)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(403,22) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+1] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(404,10) ]
+      remark #15388: vectorization support: reference generator._M_x[__k] has aligned access   [ /usr/include/c++/13/bits/random.tcc(405,4) ]
+      remark #15389: vectorization support: reference generator._M_x[__k+397] has unaligned access   [ /usr/include/c++/13/bits/random.tcc(405,17) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15335: remainder loop was not vectorized: vectorization possible but seems inefficient. Use vector always directive or -vec-threshold0 to override 
+      remark #15305: vectorization support: vector length 2
+      remark #15427: loop was completely unrolled
+      remark #15309: vectorization support: normalized vectorization overhead 0.267
+      remark #25436: completely unrolled by 3  
+   LOOP END
+LOOP END
+
+LOOP BEGIN at nbody.cpp(178,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle_reference.x[i] (179:5) and particle_reference.vz[i] (184:5)
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle_reference.vz[i] (184:5) and particle_reference.x[i] (179:5)
+LOOP END
+
+LOOP BEGIN at nbody.cpp(19,3) inlined into nbody.cpp(187,3)
+   remark #25096: Loop Interchange not done due to: Imperfect Loop Nest (Either at Source or due to other Compiler Transformations)
+   remark #25451: Advice: Loop Interchange, if possible, might help loopnest. Suggested Permutation : ( 1 2 ) --> ( 2 1 ) 
+   remark #25236: Loop with pragma of trip count = 16384 ignored for large value
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at nbody.cpp(25,5) inlined into nbody.cpp(187,3)
+   <Peeled loop for vectorization>
+      remark #15389: vectorization support: reference particle_reference.x[j] has unaligned access   [ nbody.cpp(31,24) ]
+      remark #15389: vectorization support: reference particle_reference.y[j] has unaligned access   [ nbody.cpp(32,24) ]
+      remark #15389: vectorization support: reference particle_reference.z[j] has unaligned access   [ nbody.cpp(33,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.123
+      remark #15417: vectorization support: number of FP up converts: single precision to double precision 2   [ nbody.cpp(35,29) ]
+      remark #15418: vectorization support: number of FP down converts: double precision to single precision 1   [ nbody.cpp(35,29) ]
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(22,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(22,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(22,30) ]
+      remark #15301: PEEL LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 177 
+      remark #15477: vector cost: 33.500 
+      remark #15478: estimated potential speedup: 4.900 
+      remark #15486: divides: 3 
+      remark #15487: type converts: 3 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cpp(25,5) inlined into nbody.cpp(187,3)
+      remark #15389: vectorization support: reference particle_reference.x[j] has unaligned access   [ nbody.cpp(31,24) ]
+      remark #15389: vectorization support: reference particle_reference.y[j] has unaligned access   [ nbody.cpp(32,24) ]
+      remark #15389: vectorization support: reference particle_reference.z[j] has unaligned access   [ nbody.cpp(33,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.418
+      remark #15417: vectorization support: number of FP up converts: single precision to double precision 2   [ nbody.cpp(35,29) ]
+      remark #15418: vectorization support: number of FP down converts: double precision to single precision 1   [ nbody.cpp(35,29) ]
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(22,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(22,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(22,30) ]
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 177 
+      remark #15477: vector cost: 33.500 
+      remark #15478: estimated potential speedup: 4.900 
+      remark #15486: divides: 3 
+      remark #15487: type converts: 3 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cpp(25,5) inlined into nbody.cpp(187,3)
+   <Remainder loop for vectorization>
+      remark #15389: vectorization support: reference particle_reference.x[j] has unaligned access   [ nbody.cpp(31,24) ]
+      remark #15389: vectorization support: reference particle_reference.y[j] has unaligned access   [ nbody.cpp(32,24) ]
+      remark #15389: vectorization support: reference particle_reference.z[j] has unaligned access   [ nbody.cpp(33,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.123
+      remark #15417: vectorization support: number of FP up converts: single precision to double precision 2   [ nbody.cpp(35,29) ]
+      remark #15418: vectorization support: number of FP down converts: double precision to single precision 1   [ nbody.cpp(35,29) ]
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(22,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(22,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(22,30) ]
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 177 
+      remark #15477: vector cost: 33.500 
+      remark #15478: estimated potential speedup: 4.900 
+      remark #15486: divides: 3 
+      remark #15487: type converts: 3 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+LOOP END
+
+LOOP BEGIN at nbody.cpp(51,3) inlined into nbody.cpp(187,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle_reference.x[i] (52:5) and particle_reference.z[i] (54:5)
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle_reference.z[i] (54:5) and particle_reference.x[i] (52:5)
+LOOP END
+
+LOOP BEGIN at nbody.cpp(196,3)
+   remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ nbody.cpp(220,16) ]
+LOOP END
+
+
+Non-optimizable loops:
+
+
+LOOP BEGIN at nbody.cpp(160,3)
+   remark #15532: loop was not vectorized: compile time constraints prevent loop optimization. Consider using -O3.
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34060: alignment of adjacent dense (unit-strided stencil) loads is (alignment, offset): (32, 0)
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34050: adjacent dense (unit-strided stencil) loads seem unprofitable to optimize.
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34060: alignment of adjacent dense (unit-strided stencil) loads is (alignment, offset): (32, 0)
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34050: adjacent dense (unit-strided stencil) loads seem unprofitable to optimize.
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34060: alignment of adjacent dense (unit-strided stencil) loads is (alignment, offset): (32, 0)
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34050: adjacent dense (unit-strided stencil) loads seem unprofitable to optimize.
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34060: alignment of adjacent dense (unit-strided stencil) loads is (alignment, offset): (32, 0)
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34050: adjacent dense (unit-strided stencil) loads seem unprofitable to optimize.
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34060: alignment of adjacent dense (unit-strided stencil) loads is (alignment, offset): (32, 0)
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34050: adjacent dense (unit-strided stencil) loads seem unprofitable to optimize.
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34060: alignment of adjacent dense (unit-strided stencil) loads is (alignment, offset): (32, 0)
+/usr/include/c++/13/bits/random.tcc(404,26):remark #34050: adjacent dense (unit-strided stencil) loads seem unprofitable to optimize.
+nbody.cpp(139,45):remark #34051: REGISTER ALLOCATION : [main] nbody.cpp:139
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   63[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm31 k0-k7]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   50[ rax rdx rcx rbx rsi rdi r8-r15 mm0-mm2 zmm0-zmm31 k1]
+        
+    Routine temporaries
+        Total         :     944
+            Global    :     192
+            Local     :     752
+        Regenerable   :     109
+        Spilled       :      28
+        
+    Routine stack
+        Variables     :    5124 bytes*
+            Reads     :     167 [1.80e+01 ~ 18.0%]
+            Writes    :      71 [6.97e+00 ~ 7.0%]
+        Spills        :     192 bytes*
+            Reads     :      65 [6.94e-02 ~ 0.1%]
+            Writes    :      46 [4.82e-02 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: compare_particle_arrays(int, const ParticleSet &, const ParticleSet &)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (compare_particle_arrays(int, const ParticleSet &, const ParticleSet &)) [2/27=7.4%] nbody.cpp(109,90)
+  -> INLINE (MANUAL): (111,9) std::abs(float) (isz = 0) (sz = 7)
+  -> EXTERN: (112,7) printf(const char *, ...)
+  -> INLINE (MANUAL): (112,52) std::abs(float) (isz = 0) (sz = 7)
+  -> INLINE (MANUAL): (115,9) std::abs(float) (isz = 0) (sz = 7)
+  -> EXTERN: (116,7) printf(const char *, ...)
+  -> INLINE (MANUAL): (116,52) std::abs(float) (isz = 0) (sz = 7)
+  -> INLINE (MANUAL): (119,9) std::abs(float) (isz = 0) (sz = 7)
+  -> EXTERN: (120,7) printf(const char *, ...)
+  -> INLINE (MANUAL): (120,52) std::abs(float) (isz = 0) (sz = 7)
+  -> INLINE (MANUAL): (123,9) std::abs(float) (isz = 0) (sz = 7)
+  -> EXTERN: (124,7) printf(const char *, ...)
+  -> INLINE (MANUAL): (124,55) std::abs(float) (isz = 0) (sz = 7)
+  -> INLINE (MANUAL): (127,9) std::abs(float) (isz = 0) (sz = 7)
+  -> EXTERN: (128,7) printf(const char *, ...)
+  -> INLINE (MANUAL): (128,55) std::abs(float) (isz = 0) (sz = 7)
+  -> INLINE (MANUAL): (131,9) std::abs(float) (isz = 0) (sz = 7)
+  -> EXTERN: (132,7) printf(const char *, ...)
+  -> INLINE (MANUAL): (132,55) std::abs(float) (isz = 0) (sz = 7)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at nbody.cpp(110,3)
+   remark #15520: loop was not vectorized: loop with multiple exits cannot be vectorized unless it meets search loop idiom criteria   [ nbody.cpp(113,14) ]
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+nbody.cpp(109,90):remark #34051: REGISTER ALLOCATION : [_Z23compare_particle_arraysiRK11ParticleSetS1_] nbody.cpp:109
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   63[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm31 k0-k7]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   21[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm4 zmm16-zmm17]
+        
+    Routine temporaries
+        Total         :     142
+            Global    :      24
+            Local     :     118
+        Regenerable   :      26
+        Spilled       :       5
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: MoveParticles(int, ParticleSet &, float)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (MoveParticles(int, ParticleSet &, float)) [3/27=11.1%] nbody.cpp(58,81)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at nbody.cpp(61,1)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at nbody.cpp(100,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle->x[i] (101:5) and particle->z[i] (103:5)
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle->z[i] (103:5) and particle->x[i] (101:5)
+LOOP END
+
+LOOP BEGIN at nbody.cpp(62,3)
+   remark #25096: Loop Interchange not done due to: Imperfect Loop Nest (Either at Source or due to other Compiler Transformations)
+   remark #25451: Advice: Loop Interchange, if possible, might help loopnest. Suggested Permutation : ( 1 2 ) --> ( 2 1 ) 
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at nbody.cpp(71,5)
+      remark #15388: vectorization support: reference particle->x[j] has aligned access   [ nbody.cpp(77,24) ]
+      remark #15388: vectorization support: reference particle->y[j] has aligned access   [ nbody.cpp(78,24) ]
+      remark #15388: vectorization support: reference particle->z[j] has aligned access   [ nbody.cpp(79,24) ]
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 1.045
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(65,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(65,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(65,30) ]
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15448: unmasked aligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 94 
+      remark #15477: vector cost: 11.120 
+      remark #15478: estimated potential speedup: 7.910 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cpp(71,5)
+   <Remainder loop for vectorization>
+      remark #15388: vectorization support: reference particle->x[j] has aligned access   [ nbody.cpp(77,24) ]
+      remark #15388: vectorization support: reference particle->y[j] has aligned access   [ nbody.cpp(78,24) ]
+      remark #15388: vectorization support: reference particle->z[j] has aligned access   [ nbody.cpp(79,24) ]
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.259
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(65,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(65,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(65,30) ]
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+      remark #15448: unmasked aligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 94 
+      remark #15477: vector cost: 11.120 
+      remark #15478: estimated potential speedup: 7.910 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+nbody.cpp(58,81):remark #34051: REGISTER ALLOCATION : [_Z13MoveParticlesiR11ParticleSetf] nbody.cpp:58
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   63[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm31 k0-k7]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   46[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm30 k1]
+        
+    Routine temporaries
+        Total         :     222
+            Global    :      49
+            Local     :     173
+        Regenerable   :      51
+        Spilled       :       4
+        
+    Routine stack
+        Variables     :      44 bytes*
+            Reads     :       7 [2.57e-01 ~ 0.3%]
+            Writes    :       8 [1.28e+00 ~ 1.3%]
+        Spills        :      72 bytes*
+            Reads     :      14 [9.68e-01 ~ 1.0%]
+            Writes    :      14 [1.33e+00 ~ 1.3%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: atoi(const char *) noexcept(true)
+
+    Report from: Interprocedural optimizations [ipo]
+
+NEVER EMIT DEFINITION FUNCTION: (atoi(const char *) noexcept(true))/usr/include/stdlib.h(362,1)
+
+===========================================================================
+
+Begin optimization report for: MoveParticles_Orig(int, ParticleSet &, float)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (MoveParticles_Orig(int, ParticleSet &, float)) [5/27=18.5%] nbody.cpp(16,86)
+  -> INLINE (MANUAL): (35,31) std::pow<float, double>(float, double) (isz = 2) (sz = 11)
+    -> EXTERN: /usr/include/c++/13/cmath:(418,14) pow(double, double) noexcept(true)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+
+LOOP BEGIN at nbody.cpp(19,3)
+   remark #25096: Loop Interchange not done due to: Imperfect Loop Nest (Either at Source or due to other Compiler Transformations)
+   remark #25451: Advice: Loop Interchange, if possible, might help loopnest. Suggested Permutation : ( 1 2 ) --> ( 2 1 ) 
+   remark #15542: loop was not vectorized: inner loop was already vectorized
+
+   LOOP BEGIN at nbody.cpp(25,5)
+   <Peeled loop for vectorization>
+      remark #15389: vectorization support: reference particle->x[j] has unaligned access   [ nbody.cpp(31,24) ]
+      remark #15389: vectorization support: reference particle->y[j] has unaligned access   [ nbody.cpp(32,24) ]
+      remark #15389: vectorization support: reference particle->z[j] has unaligned access   [ nbody.cpp(33,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.123
+      remark #15417: vectorization support: number of FP up converts: single precision to double precision 2   [ nbody.cpp(35,29) ]
+      remark #15418: vectorization support: number of FP down converts: double precision to single precision 1   [ nbody.cpp(35,29) ]
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(22,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(22,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(22,30) ]
+      remark #15301: PEEL LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 177 
+      remark #15477: vector cost: 33.500 
+      remark #15478: estimated potential speedup: 4.900 
+      remark #15486: divides: 3 
+      remark #15487: type converts: 3 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cpp(25,5)
+      remark #15389: vectorization support: reference particle->x[j] has unaligned access   [ nbody.cpp(31,24) ]
+      remark #15389: vectorization support: reference particle->y[j] has unaligned access   [ nbody.cpp(32,24) ]
+      remark #15389: vectorization support: reference particle->z[j] has unaligned access   [ nbody.cpp(33,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.418
+      remark #15417: vectorization support: number of FP up converts: single precision to double precision 2   [ nbody.cpp(35,29) ]
+      remark #15418: vectorization support: number of FP down converts: double precision to single precision 1   [ nbody.cpp(35,29) ]
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(22,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(22,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(22,30) ]
+      remark #15300: LOOP WAS VECTORIZED
+      remark #26013: Compiler has chosen to target XMM/YMM vector. Try using -qopt-zmm-usage=high to override
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 177 
+      remark #15477: vector cost: 33.500 
+      remark #15478: estimated potential speedup: 4.900 
+      remark #15486: divides: 3 
+      remark #15487: type converts: 3 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+
+   LOOP BEGIN at nbody.cpp(25,5)
+   <Remainder loop for vectorization>
+      remark #15389: vectorization support: reference particle->x[j] has unaligned access   [ nbody.cpp(31,24) ]
+      remark #15389: vectorization support: reference particle->y[j] has unaligned access   [ nbody.cpp(32,24) ]
+      remark #15389: vectorization support: reference particle->z[j] has unaligned access   [ nbody.cpp(33,24) ]
+      remark #15381: vectorization support: unaligned access used inside loop body
+      remark #15305: vectorization support: vector length 8
+      remark #15309: vectorization support: normalized vectorization overhead 0.123
+      remark #15417: vectorization support: number of FP up converts: single precision to double precision 2   [ nbody.cpp(35,29) ]
+      remark #15418: vectorization support: number of FP down converts: double precision to single precision 1   [ nbody.cpp(35,29) ]
+      remark #15355: vectorization support: Fx is float type reduction   [ nbody.cpp(22,14) ]
+      remark #15355: vectorization support: Fy is float type reduction   [ nbody.cpp(22,22) ]
+      remark #15355: vectorization support: Fz is float type reduction   [ nbody.cpp(22,30) ]
+      remark #15301: REMAINDER LOOP WAS VECTORIZED
+      remark #15450: unmasked unaligned unit stride loads: 3 
+      remark #15475: --- begin vector cost summary ---
+      remark #15476: scalar cost: 177 
+      remark #15477: vector cost: 33.500 
+      remark #15478: estimated potential speedup: 4.900 
+      remark #15486: divides: 3 
+      remark #15487: type converts: 3 
+      remark #15488: --- end vector cost summary ---
+   LOOP END
+LOOP END
+
+LOOP BEGIN at nbody.cpp(51,3)
+   remark #15344: loop was not vectorized: vector dependence prevents vectorization
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle->x[i] (52:5) and particle->z[i] (54:5)
+   remark #15346: vector dependence: assumed OUTPUT dependence between particle->z[i] (54:5) and particle->x[i] (52:5)
+LOOP END
+
+    Report from: Code generation optimizations [cg]
+
+nbody.cpp(16,86):remark #34051: REGISTER ALLOCATION : [_Z18MoveParticles_OrigiR11ParticleSetf] nbody.cpp:16
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   63[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm31 k0-k7]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   47[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm31 k1]
+        
+    Routine temporaries
+        Total         :     188
+            Global    :      49
+            Local     :     139
+        Regenerable   :       8
+        Spilled       :       8
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :      32 bytes*
+            Reads     :       6 [4.04e-01 ~ 0.4%]
+            Writes    :       4 [4.61e-02 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::mersenne_twister_engine(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *, std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::result_type)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::mersenne_twister_engine(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *, std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::result_type)) /usr/include/c++/13/bits/random.h(531,7)
+
+===========================================================================
+
+Begin optimization report for: std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::seed(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *, std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::result_type)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::seed(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *, std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::result_type)) /usr/include/c++/13/bits/random.tcc(326,5)
+
+===========================================================================
+
+Begin optimization report for: std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::operator()(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *)) /usr/include/c++/13/bits/random.tcc(453,5)
+
+===========================================================================
+
+Begin optimization report for: std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL>::_M_gen_rand(std::mersenne_twister_engine<uint_fast32_t, 32UL, 624UL, 397UL, 31UL, 2567483615UL, 11UL, 4294967295UL, 7UL, 2636928640UL, 15UL, 4022730752UL, 18UL, 1812433253UL> *)) /usr/include/c++/13/bits/random.tcc(397,5)
+
+===========================================================================
+
+Begin optimization report for: std::uniform_real_distribution<float>::uniform_real_distribution(std::uniform_real_distribution<float> *, float, float)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::uniform_real_distribution<float>::uniform_real_distribution(std::uniform_real_distribution<float> *, float, float)) /usr/include/c++/13/bits/random.h(1803,7)
+
+===========================================================================
+
+Begin optimization report for: std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &)) /usr/include/c++/13/bits/random.h(1861,9)
+
+===========================================================================
+
+Begin optimization report for: std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::uniform_real_distribution<float>::operator()<std::mt19937>(std::uniform_real_distribution<float> *, std::mt19937 &, const std::uniform_real_distribution<float>::param_type &)) /usr/include/c++/13/bits/random.h(1867,2)
+
+===========================================================================
+
+Begin optimization report for: std::uniform_real_distribution<float>::param_type::param_type(std::uniform_real_distribution<float>::param_type *, float, float)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::uniform_real_distribution<float>::param_type::param_type(std::uniform_real_distribution<float>::param_type *, float, float)) /usr/include/c++/13/bits/random.h(1761,2)
+
+===========================================================================
+
+Begin optimization report for: std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::uniform_real_distribution<float>::param_type::a(const std::uniform_real_distribution<float>::param_type *) const) /usr/include/c++/13/bits/random.h(1767,2)
+
+===========================================================================
+
+Begin optimization report for: std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::uniform_real_distribution<float>::param_type::b(const std::uniform_real_distribution<float>::param_type *) const) /usr/include/c++/13/bits/random.h(1771,2)
+
+===========================================================================
+
+Begin optimization report for: std::__detail::_Mod<uint_fast32_t, 4294967296UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::__detail::_Mod<uint_fast32_t, 4294967296UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t)) /usr/include/c++/13/bits/random.h(138,2)
+
+===========================================================================
+
+Begin optimization report for: std::__detail::_Mod<uint_fast32_t, 624UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::__detail::_Mod<uint_fast32_t, 624UL, 1UL, 0UL, true, true>::__calc(uint_fast32_t)) /usr/include/c++/13/bits/random.h(138,2)
+
+===========================================================================
+
+Begin optimization report for: std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::_Adaptor(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *, std::mt19937 &)) /usr/include/c++/13/bits/random.h(172,14)
+
+===========================================================================
+
+Begin optimization report for: std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type>::operator()(std::__detail::_Adaptor<std::mt19937, std::uniform_real_distribution<float>::result_type> *)) /usr/include/c++/13/bits/random.h(189,2)
+
+===========================================================================
+
+Begin optimization report for: std::__detail::__mod<uint_fast32_t, 4294967296UL, 1UL, 0UL>(uint_fast32_t)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::__detail::__mod<uint_fast32_t, 4294967296UL, 1UL, 0UL>(uint_fast32_t)) /usr/include/c++/13/bits/random.h(149,7)
+
+===========================================================================
+
+Begin optimization report for: std::__detail::__mod<uint_fast32_t, 624UL, 1UL, 0UL>(uint_fast32_t)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::__detail::__mod<uint_fast32_t, 624UL, 1UL, 0UL>(uint_fast32_t)) /usr/include/c++/13/bits/random.h(149,7)
+
+===========================================================================
+
+Begin optimization report for: std::abs(float)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::abs(float)) /usr/include/c++/13/bits/std_abs.h(76,3)
+
+===========================================================================
+
+Begin optimization report for: std::log(long double)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::log(long double)) /usr/include/c++/13/cmath(343,3)
+
+===========================================================================
+
+Begin optimization report for: std::nextafter(float, float)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::nextafter(float, float)) /usr/include/c++/13/cmath(1661,3)
+
+===========================================================================
+
+Begin optimization report for: std::pow<float, double>(float, double)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (std::pow<float, double>(float, double)) [25/27=92.6%] /usr/include/c++/13/cmath(416,5)
+  -> EXTERN: (418,14) pow(double, double) noexcept(true)
+
+
+    Report from: Code generation optimizations [cg]
+
+/usr/include/c++/13/cmath(416,5):remark #34051: REGISTER ALLOCATION : [_ZSt3powIfdEN9__gnu_cxx11__promote_2IT_T0_NS0_9__promoteIS2_Xsr3std12__is_integerIS2_EE7__valueEE6__typeENS4_IS3_Xsr3std12__is_integerIS3_EE7__valueEE6__typeEE6__typeES2_S3_] /usr/include/c++/13/cmath:416
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   63[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm31 k0-k7]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    2[ zmm0-zmm1]
+        
+    Routine temporaries
+        Total         :      16
+            Global    :       7
+            Local     :       9
+        Regenerable   :       0
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::generate_canonical<std::uniform_real_distribution<float>::result_type, 24UL, std::mt19937>(std::mt19937 &)) /usr/include/c++/13/bits/random.tcc(3345,5)
+
+===========================================================================
+
+Begin optimization report for: std::max<std::size_t>(const std::size_t &, const std::size_t &)
+
+    Report from: Interprocedural optimizations [ipo]
+
+DEAD STATIC FUNCTION: (std::max<std::size_t>(const std::size_t &, const std::size_t &)) /usr/include/c++/13/bits/stl_algobase.h(255,5)
+
+===========================================================================
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING FOOTNOTES:
+
+<1> The compiler's heuristics predict that it is not profitable to inline the
+    call.  Add "inline __attribute__((always_inline))" to the declaration of
+    the called function or add "#pragma forceinline" before the call site.
+
+<2> The function is larger than the inliner would normally inline.  Use the
+    option -inline-max-size to increase the size of any function that would
+    normally be inlined, add "inline __attribute__((always_inline))" to the
+    declaration of the called function, or add "#pragma forceinline" before
+    the call site.
+

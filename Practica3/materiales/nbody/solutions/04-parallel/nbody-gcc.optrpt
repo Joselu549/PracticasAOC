@@ -1,0 +1,1198 @@
+nbody.cpp:125:58: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:125:58: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:124:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:124:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:121:58: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:121:58: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:120:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:120:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:117:58: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:117:58: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:116:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:116:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:113:55: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:113:55: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:112:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:112:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:109:55: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:109:55: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:108:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:108:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:105:55: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:105:55: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:104:12: note: Considering inline candidate constexpr float std::abs(float)/34.
+nbody.cpp:104:12: optimized:  Inlining constexpr float std::abs(float)/34 into bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:34:34: note: Considering inline candidate constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = float; _Up = double]/2567.
+nbody.cpp:34:34: optimized:  Inlining constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::pow(_Tp, _Up) [with _Tp = float; _Up = double]/2567 into void MoveParticles_Orig(int, ParticleType*, float)/2205.
+/usr/include.original/c++/13/bits/random.h:1841:9: note: Considering inline candidate std::uniform_real_distribution<_RealType>::param_type::param_type(_RealType, _RealType) [with _RealType = float]/2750.
+/usr/include.original/c++/13/bits/random.h:1841:9: optimized:  Inlining std::uniform_real_distribution<_RealType>::param_type::param_type(_RealType, _RealType) [with _RealType = float]/2750 into std::uniform_real_distribution<_RealType>::uniform_real_distribution(_RealType, _RealType) [with _RealType = float]/2572.
+/usr/include.original/c++/13/bits/random.h:158:46: note: Considering inline candidate static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2957.
+/usr/include.original/c++/13/bits/random.h:158:46: optimized:  Inlining static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2957 into _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869.
+/usr/include.original/c++/13/bits/random.h:158:46: note: Considering inline candidate static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2958.
+/usr/include.original/c++/13/bits/random.h:158:46: optimized:  Inlining static _Tp std::__detail::_Mod<_Tp, __m, __a, __c, true, __s>::__calc(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0; bool __s = true]/2958 into _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0]/2870.
+/usr/include.original/c++/13/bits/random.tcc:340:48: note: Considering inline candidate _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869.
+/usr/include.original/c++/13/bits/random.tcc:340:48: optimized:  Inlining _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869 into void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.tcc:338:42: note: Considering inline candidate _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0]/2870.
+/usr/include.original/c++/13/bits/random.tcc:338:42: optimized:  Inlining _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 624; _Tp __a = 1; _Tp __c = 0]/2870 into void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.tcc:331:44: note: Considering inline candidate _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869.
+/usr/include.original/c++/13/bits/random.tcc:331:44: optimized:  Inlining _Tp std::__detail::__mod(_Tp) [with _Tp = long unsigned int; _Tp __m = 4294967296; _Tp __a = 1; _Tp __c = 0]/2869 into void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.h:546:13: note: Considering inline candidate void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748.
+/usr/include.original/c++/13/bits/random.h:546:13: optimized:  Inlining void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::seed(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2748 into std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::mersenne_twister_engine(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2569.
+/usr/include.original/c++/13/bits/random.tcc:459:13: note: Considering inline candidate void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::_M_gen_rand() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/3017.
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed:   will not early inline: std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999->void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::_M_gen_rand() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/3017, call is cold and code would grow at least by 48
+/usr/include.original/c++/13/bits/random.tcc:3364:29: note: Considering inline candidate std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999.
+/usr/include.original/c++/13/bits/random.tcc:3364:29: missed:   will not early inline: _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963->std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999, growth 16 exceeds --param early-inlining-insns
+/usr/include.original/c++/13/bits/random.tcc:3357:42: note: Considering inline candidate constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int]/2962.
+/usr/include.original/c++/13/bits/random.tcc:3357:42: optimized:  Inlining constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int]/2962 into _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963.
+/usr/include.original/c++/13/bits/random.h:194:38: note: Considering inline candidate _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963.
+/usr/include.original/c++/13/bits/random.h:194:38: missed:   will not early inline: _DInputType std::__detail::_Adaptor<_Engine, _DInputType>::operator()() [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2874->_RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963, growth 9 exceeds --param early-inlining-insns divided by number of calls
+/usr/include.original/c++/13/bits/random.h:1909:52: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876.
+/usr/include.original/c++/13/bits/random.h:1909:52: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1909:40: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876.
+/usr/include.original/c++/13/bits/random.h:1909:40: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::a() const [with _RealType = float]/2876 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1909:30: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::b() const [with _RealType = float]/2875.
+/usr/include.original/c++/13/bits/random.h:1909:30: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::param_type::b() const [with _RealType = float]/2875 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1909:19: note: Considering inline candidate _DInputType std::__detail::_Adaptor<_Engine, _DInputType>::operator()() [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2874.
+/usr/include.original/c++/13/bits/random.h:1909:19: optimized:  Inlining _DInputType std::__detail::_Adaptor<_Engine, _DInputType>::operator()() [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2874 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1908:6: note: Considering inline candidate std::__detail::_Adaptor<_Engine, _DInputType>::_Adaptor(_Engine&) [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2872.
+/usr/include.original/c++/13/bits/random.h:1908:6: optimized:  Inlining std::__detail::_Adaptor<_Engine, _DInputType>::_Adaptor(_Engine&) [with _Engine = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _DInputType = float]/2872 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1900:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752.
+/usr/include.original/c++/13/bits/random.h:1900:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&, const param_type&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2752 into std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:135:42: optimized:   Inlining int atoi(const char*)/20 into int main(int, const char**)/2209 (always_inline).
+nbody.cpp:192:35: note: Considering inline candidate bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208.
+nbody.cpp:192:35: missed:   will not early inline: int main(int, const char**)/2209->bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208, call is cold and code would grow at least by 73
+nbody.cpp:175:18: note: Considering inline candidate void MoveParticles(int, ParticleType*, float)/2206.
+nbody.cpp:175:18: missed:   will not early inline: int main(int, const char**)/2209->void MoveParticles(int, ParticleType*, float)/2206, call is cold and code would grow at least by 24
+nbody.cpp:163:21: note: Considering inline candidate void MoveParticles_Orig(int, ParticleType*, float)/2205.
+nbody.cpp:163:21: missed:   will not early inline: int main(int, const char**)/2209->void MoveParticles_Orig(int, ParticleType*, float)/2205, call is cold and code would grow at least by 65
+nbody.cpp:153:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:153:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:152:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:152:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:151:34: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:151:34: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:150:33: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:150:33: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:149:33: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:149:33: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:148:33: note: Considering inline candidate std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574.
+nbody.cpp:148:33: optimized:  Inlining std::uniform_real_distribution<_RealType>::result_type std::uniform_real_distribution<_RealType>::operator()(_UniformRandomNumberGenerator&) [with _UniformRandomNumberGenerator = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>; _RealType = float]/2574 into int main(int, const char**)/2209.
+nbody.cpp:146:52: note: Considering inline candidate std::uniform_real_distribution<_RealType>::uniform_real_distribution(_RealType, _RealType) [with _RealType = float]/2572.
+nbody.cpp:146:52: optimized:  Inlining std::uniform_real_distribution<_RealType>::uniform_real_distribution(_RealType, _RealType) [with _RealType = float]/2572 into int main(int, const char**)/2209.
+nbody.cpp:145:22: note: Considering inline candidate std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::mersenne_twister_engine(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2569.
+nbody.cpp:145:22: optimized:  Inlining std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::mersenne_twister_engine(result_type) [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2569 into int main(int, const char**)/2209.
+nbody.cpp:76:34: missed:   not inlinable: _Z13MoveParticlesiP12ParticleTypef._omp_fn.0/3081 -> float sqrtf(float)/3084, function body not available
+missed:   not inlinable: _Z13MoveParticlesiP12ParticleTypef._omp_fn.0/3081 -> int __builtin_omp_get_thread_num()/3083, function body not available
+missed:   not inlinable: _Z13MoveParticlesiP12ParticleTypef._omp_fn.0/3081 -> int __builtin_omp_get_num_threads()/3082, function body not available
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed:   not inlinable: std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999 -> void std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::_M_gen_rand() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/3017, --param max-inline-insns-auto limit reached
+/usr/include.original/c++/13/bits/random.tcc:3368:27: missed:   not inlinable: _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963 -> long int __builtin_expect(long int, long int)/3098, function body not available
+nbody.cpp:210:12: missed:   not inlinable: int main(int, const char**)/2209 -> void operator delete [](void*)/3096, function body not available
+nbody.cpp:209:12: missed:   not inlinable: int main(int, const char**)/2209 -> void operator delete [](void*)/3096, function body not available
+nbody.cpp:207:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:206:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:205:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:203:9: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:202:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:201:13: missed:   not inlinable: int main(int, const char**)/2209 -> double sqrt(double)/3095, function body not available
+nbody.cpp:195:15: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:194:15: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:193:15: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:192:35: missed:   not inlinable: int main(int, const char**)/2209 -> bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208, --param max-inline-insns-auto limit reached
+nbody.cpp:188:11: missed:   not inlinable: int main(int, const char**)/2209 -> int fflush(FILE*)/3093, function body not available
+nbody.cpp:186:11: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:176:38: missed:   not inlinable: int main(int, const char**)/2209 -> double omp_get_wtime()/3094, function body not available
+nbody.cpp:174:40: missed:   not inlinable: int main(int, const char**)/2209 -> double omp_get_wtime()/3094, function body not available
+nbody.cpp:171:98: missed:   not inlinable: int main(int, const char**)/2209 -> int fflush(FILE*)/3093, function body not available
+nbody.cpp:171:9: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:167:9: missed:   not inlinable: int main(int, const char**)/2209 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:167:9: missed:   not inlinable: int main(int, const char**)/2209 -> int omp_get_max_threads()/3091, function body not available
+nbody.cpp:166:9: missed:   not inlinable: int main(int, const char**)/2209 -> int __builtin_puts(const char*)/3090, function body not available
+nbody.cpp:163:21: missed:   not inlinable: int main(int, const char**)/2209 -> void MoveParticles_Orig(int, ParticleType*, float)/2205, --param max-inline-insns-auto limit reached
+nbody.cpp:157:65: missed:   not inlinable: int main(int, const char**)/2209 -> void* operator new [](std::size_t)/3088, function body not available
+nbody.cpp:142:55: missed:   not inlinable: int main(int, const char**)/2209 -> sizetype __cxa_throw_bad_array_new_length()/3089, function body not available
+nbody.cpp:142:55: missed:   not inlinable: int main(int, const char**)/2209 -> void* operator new [](std::size_t)/3088, function body not available
+/usr/include/stdlib.h:364:23: missed:   not inlinable: int main(int, const char**)/2209 -> long int strtol(const char*, char**, int)/3097, function body not available
+nbody.cpp:125:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:121:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:117:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:113:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:109:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208 -> int printf(const char*, ...)/3087, function body not available
+nbody.cpp:105:13: missed:   not inlinable: bool compare_particle_arrays(int, const ParticleType*, const ParticleType*)/2208 -> int printf(const char*, ...)/3087, function body not available
+missed:   not inlinable: void MoveParticles(int, ParticleType*, float)/2206 -> void __builtin_GOMP_parallel(void (*)(void*), void*, unsigned int, unsigned int)/3085, function body not available
+/usr/include.original/c++/13/cmath:1073:17: missed:   not inlinable: void MoveParticles_Orig(int, ParticleType*, float)/2205 -> double pow(double, double)/3080, function body not available
+/usr/include.original/c++/13/bits/random.tcc:3364:29: optimized:  Inlined std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::result_type std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>::operator()() [with _UIntType = long unsigned int; long unsigned int __w = 32; long unsigned int __n = 624; long unsigned int __m = 397; long unsigned int __r = 31; _UIntType __a = 2567483615; long unsigned int __u = 11; _UIntType __d = 4294967295; long unsigned int __s = 7; _UIntType __b = 2636928640; long unsigned int __t = 15; _UIntType __c = 4022730752; long unsigned int __l = 18; _UIntType __f = 1812433253]/2999 into _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963 which now has time 42.630000 and size 31, net change of -8.
+nbody.cpp:175:18: optimized:  Inlined void MoveParticles(int, ParticleType*, float)/3117 into int main(int, const char**)/2209 which now has time 4953.148811 and size 201, net change of +24.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3118 into int main(int, const char**)/2209 which now has time 5184.791534 and size 226, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3120 into int main(int, const char**)/2209 which now has time 5416.434265 and size 251, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3122 into int main(int, const char**)/2209 which now has time 5648.076996 and size 276, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3124 into int main(int, const char**)/2209 which now has time 5879.719727 and size 301, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/3126 into int main(int, const char**)/2209 which now has time 6111.362457 and size 326, net change of +25.
+/usr/include.original/c++/13/bits/random.h:194:38: optimized:  Inlined _RealType std::generate_canonical(_UniformRandomNumberGenerator&) [with _RealType = float; long unsigned int __bits = 24; _UniformRandomNumberGenerator = mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]/2963 into int main(int, const char**)/2209 which now has time 6343.005180 and size 351, net change of -6.
+Unit growth for small function inlining: 530->665 (25%)
+
+Inlined 44 calls, eliminated 19 functions
+
+BB 5 is always executed in loop 1
+BB 4 is always executed in loop 1
+BB 6 is always executed in loop 2
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:61:40: note: Considering guard 4 -> 16 in loop 1
+nbody.cpp:61:40: missed: Block 5 has side effects
+nbody.cpp:61:40: missed: couldn't vectorize loop
+nbody.cpp:61:40: missed: not vectorized: control flow in loop.
+nbody.cpp:67:23: missed: couldn't vectorize loop
+nbody.cpp:73:36: missed: not vectorized: no vectype for stmt: _45 = *_44.x;
+ scalar_type: float
+nbody.cpp:60:9: note: vectorized 0 loops in function.
+nbody.cpp:86:20: note: ***** Analysis succeeded with vector mode V8SI
+nbody.cpp:86:20: note: SLPing BB part
+nbody.cpp:86:20: note: Costing subgraph: 
+nbody.cpp:86:20: note: node 0x35c10e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: *_207.vx = _31;
+nbody.cpp:86:20: note: 	stmt 0 *_207.vx = _31;
+nbody.cpp:86:20: note: 	stmt 1 *_207.vy = _35;
+nbody.cpp:86:20: note: 	children 0x35c1168
+nbody.cpp:86:20: note: node 0x35c1168 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _31 = _26 + prephitmp_200;
+nbody.cpp:86:20: note: 	stmt 0 _31 = _26 + prephitmp_200;
+nbody.cpp:86:20: note: 	stmt 1 _35 = _33 + prephitmp_202;
+nbody.cpp:86:20: note: 	children 0x35c11e8 0x35c1268
+nbody.cpp:86:20: note: node 0x35c11e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _26 = *_207.vx;
+nbody.cpp:86:20: note: 	stmt 0 _26 = *_207.vx;
+nbody.cpp:86:20: note: 	stmt 1 _33 = *_207.vy;
+nbody.cpp:86:20: note: node 0x35c1268 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: prephitmp_200 = PHI <_199(8), 0.0(4)>
+nbody.cpp:86:20: note: 	stmt 0 prephitmp_200 = PHI <_199(8), 0.0(4)>
+nbody.cpp:86:20: note: 	stmt 1 prephitmp_202 = PHI <_201(8), 0.0(4)>
+nbody.cpp:86:20: note: 	children 0x35c12e8 0x35c1868
+nbody.cpp:86:20: note: node 0x35c12e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _199 = dt_12 * Fx_77;
+nbody.cpp:86:20: note: 	stmt 0 _199 = dt_12 * Fx_77;
+nbody.cpp:86:20: note: 	stmt 1 _201 = dt_12 * Fy_75;
+nbody.cpp:86:20: note: 	children 0x35c1368 0x35c13e8
+nbody.cpp:86:20: note: node (external) 0x35c1368 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:86:20: note: 	{ dt_12, dt_12 }
+nbody.cpp:86:20: note: node 0x35c13e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: Fx_77 = PHI <Fx_68(7)>
+nbody.cpp:86:20: note: 	stmt 0 Fx_77 = PHI <Fx_68(7)>
+nbody.cpp:86:20: note: 	stmt 1 Fy_75 = PHI <Fy_70(7)>
+nbody.cpp:86:20: note: 	children 0x35c1468
+nbody.cpp:86:20: note: node 0x35c1468 (max_nunits=2, refcnt=2) vector(2) float
+nbody.cpp:86:20: note: op template: Fx_68 = _67 + Fx_76;
+nbody.cpp:86:20: note: 	stmt 0 Fx_68 = _67 + Fx_76;
+nbody.cpp:86:20: note: 	stmt 1 Fy_70 = _69 + Fy_78;
+nbody.cpp:86:20: note: 	children 0x35c14e8 0x35c1768
+nbody.cpp:86:20: note: node 0x35c14e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _67 = dx_50 * powmult_66;
+nbody.cpp:86:20: note: 	stmt 0 _67 = dx_50 * powmult_66;
+nbody.cpp:86:20: note: 	stmt 1 _69 = dy_53 * powmult_66;
+nbody.cpp:86:20: note: 	children 0x35c1568 0x35c16e8
+nbody.cpp:86:20: note: node 0x35c1568 (max_nunits=2, refcnt=1) const vector(2) float
+nbody.cpp:86:20: note: op template: dx_50 = _45 - _49;
+nbody.cpp:86:20: note: 	stmt 0 dx_50 = _45 - _49;
+nbody.cpp:86:20: note: 	stmt 1 dy_53 = _51 - _52;
+nbody.cpp:86:20: note: 	children 0x35c15e8 0x35c1668
+nbody.cpp:86:20: note: node 0x35c15e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _45 = *_44.x;
+nbody.cpp:86:20: note: 	stmt 0 _45 = *_44.x;
+nbody.cpp:86:20: note: 	stmt 1 _51 = *_44.y;
+nbody.cpp:86:20: note: node 0x35c1668 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _49 = *_207.x;
+nbody.cpp:86:20: note: 	stmt 0 _49 = *_207.x;
+nbody.cpp:86:20: note: 	stmt 1 _52 = *_207.y;
+nbody.cpp:86:20: note: node (external) 0x35c16e8 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:86:20: note: 	{ powmult_66, powmult_66 }
+nbody.cpp:86:20: note: node 0x35c1768 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: Fx_76 = PHI <Fx_68(13), 0.0(6)>
+nbody.cpp:86:20: note: 	stmt 0 Fx_76 = PHI <Fx_68(13), 0.0(6)>
+nbody.cpp:86:20: note: 	stmt 1 Fy_78 = PHI <Fy_70(13), 0.0(6)>
+nbody.cpp:86:20: note: 	children 0x35c1468 0x35c17e8
+nbody.cpp:86:20: note: node (constant) 0x35c17e8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: 	{ 0.0, 0.0 }
+nbody.cpp:86:20: note: node (constant) 0x35c1868 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: 	{ 0.0, 0.0 }
+nbody.cpp:86:20: note: Cost model analysis: 
+nbody.cpp:86:20: note: Cost model analysis for part in loop 1:
+  Vector cost: 116
+  Scalar cost: 192
+nbody.cpp:86:20: note: Cost model analysis for part in loop 2:
+  Vector cost: 108
+  Scalar cost: 160
+nbody.cpp:86:20: note: Basic block will be vectorized using SLP
+nbody.cpp:86:20: note: Vectorizing SLP tree:
+nbody.cpp:86:20: note: node 0x35c10e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: *_207.vx = _31;
+nbody.cpp:86:20: note: 	stmt 0 *_207.vx = _31;
+nbody.cpp:86:20: note: 	stmt 1 *_207.vy = _35;
+nbody.cpp:86:20: note: 	children 0x35c1168
+nbody.cpp:86:20: note: node 0x35c1168 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _31 = _26 + prephitmp_200;
+nbody.cpp:86:20: note: 	stmt 0 _31 = _26 + prephitmp_200;
+nbody.cpp:86:20: note: 	stmt 1 _35 = _33 + prephitmp_202;
+nbody.cpp:86:20: note: 	children 0x35c11e8 0x35c1268
+nbody.cpp:86:20: note: node 0x35c11e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _26 = *_207.vx;
+nbody.cpp:86:20: note: 	stmt 0 _26 = *_207.vx;
+nbody.cpp:86:20: note: 	stmt 1 _33 = *_207.vy;
+nbody.cpp:86:20: note: node 0x35c1268 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: prephitmp_200 = PHI <_199(8), 0.0(4)>
+nbody.cpp:86:20: note: 	stmt 0 prephitmp_200 = PHI <_199(8), 0.0(4)>
+nbody.cpp:86:20: note: 	stmt 1 prephitmp_202 = PHI <_201(8), 0.0(4)>
+nbody.cpp:86:20: note: 	children 0x35c12e8 0x35c1868
+nbody.cpp:86:20: note: node 0x35c12e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _199 = dt_12 * Fx_77;
+nbody.cpp:86:20: note: 	stmt 0 _199 = dt_12 * Fx_77;
+nbody.cpp:86:20: note: 	stmt 1 _201 = dt_12 * Fy_75;
+nbody.cpp:86:20: note: 	children 0x35c1368 0x35c13e8
+nbody.cpp:86:20: note: node (external) 0x35c1368 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:86:20: note: 	{ dt_12, dt_12 }
+nbody.cpp:86:20: note: node 0x35c13e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: Fx_77 = PHI <Fx_68(7)>
+nbody.cpp:86:20: note: 	stmt 0 Fx_77 = PHI <Fx_68(7)>
+nbody.cpp:86:20: note: 	stmt 1 Fy_75 = PHI <Fy_70(7)>
+nbody.cpp:86:20: note: 	children 0x35c1468
+nbody.cpp:86:20: note: node 0x35c1468 (max_nunits=2, refcnt=2) vector(2) float
+nbody.cpp:86:20: note: op template: Fx_68 = _67 + Fx_76;
+nbody.cpp:86:20: note: 	stmt 0 Fx_68 = _67 + Fx_76;
+nbody.cpp:86:20: note: 	stmt 1 Fy_70 = _69 + Fy_78;
+nbody.cpp:86:20: note: 	children 0x35c14e8 0x35c1768
+nbody.cpp:86:20: note: node 0x35c14e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _67 = dx_50 * powmult_66;
+nbody.cpp:86:20: note: 	stmt 0 _67 = dx_50 * powmult_66;
+nbody.cpp:86:20: note: 	stmt 1 _69 = dy_53 * powmult_66;
+nbody.cpp:86:20: note: 	children 0x35c1568 0x35c16e8
+nbody.cpp:86:20: note: node 0x35c1568 (max_nunits=2, refcnt=1) const vector(2) float
+nbody.cpp:86:20: note: op template: dx_50 = _45 - _49;
+nbody.cpp:86:20: note: 	stmt 0 dx_50 = _45 - _49;
+nbody.cpp:86:20: note: 	stmt 1 dy_53 = _51 - _52;
+nbody.cpp:86:20: note: 	children 0x35c15e8 0x35c1668
+nbody.cpp:86:20: note: node 0x35c15e8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _45 = *_44.x;
+nbody.cpp:86:20: note: 	stmt 0 _45 = *_44.x;
+nbody.cpp:86:20: note: 	stmt 1 _51 = *_44.y;
+nbody.cpp:86:20: note: node 0x35c1668 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: _49 = *_207.x;
+nbody.cpp:86:20: note: 	stmt 0 _49 = *_207.x;
+nbody.cpp:86:20: note: 	stmt 1 _52 = *_207.y;
+nbody.cpp:86:20: note: node (external) 0x35c16e8 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:86:20: note: 	{ powmult_66, powmult_66 }
+nbody.cpp:86:20: note: node 0x35c1768 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: op template: Fx_76 = PHI <Fx_68(13), 0.0(6)>
+nbody.cpp:86:20: note: 	stmt 0 Fx_76 = PHI <Fx_68(13), 0.0(6)>
+nbody.cpp:86:20: note: 	stmt 1 Fy_78 = PHI <Fy_70(13), 0.0(6)>
+nbody.cpp:86:20: note: 	children 0x35c1468 0x35c17e8
+nbody.cpp:86:20: note: node (constant) 0x35c17e8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: 	{ 0.0, 0.0 }
+nbody.cpp:86:20: note: node (constant) 0x35c1868 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:86:20: note: 	{ 0.0, 0.0 }
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: _26 = *_207.vx;
+nbody.cpp:86:20: note: transform load. ncopies = 1
+nbody.cpp:86:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: *_207.vx
+nbody.cpp:86:20: note: created vectp.54_188
+nbody.cpp:86:20: note: add new stmt: vect__26.55_187 = MEM <vector(2) float> [(float *)vectp.54_188];
+nbody.cpp:86:20: note: add new stmt: vectp.54_186 = vectp.54_188 + 4;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: _45 = *_44.x;
+nbody.cpp:86:20: note: transform load. ncopies = 1
+nbody.cpp:86:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: *_44.x
+nbody.cpp:86:20: note: created vectp.57_184
+nbody.cpp:86:20: note: add new stmt: vect__45.58_183 = MEM <vector(2) float> [(float *)vectp.57_184];
+nbody.cpp:86:20: note: add new stmt: vectp.57_182 = vectp.57_184 + 4;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: _49 = *_207.x;
+nbody.cpp:86:20: note: transform load. ncopies = 1
+nbody.cpp:86:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: *_207.x
+nbody.cpp:86:20: note: created vectp.60_181
+nbody.cpp:86:20: note: add new stmt: vect__49.61_180 = MEM <vector(2) float> [(float *)vectp.60_181];
+nbody.cpp:86:20: note: add new stmt: vectp.60_179 = vectp.60_181 + 4;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: dx_50 = _45 - _49;
+nbody.cpp:86:20: note: vect_is_simple_use: operand *_44.x, type of def: internal
+nbody.cpp:86:20: note: vect_is_simple_use: operand *_207.x, type of def: internal
+nbody.cpp:86:20: note: transform binary/unary operation.
+nbody.cpp:86:20: note: add new stmt: vect_dx_50.62_178 = vect__45.58_183 - vect__49.61_180;
+nbody.cpp:86:20: note: extracting lane for live stmt dx_50 = _45 - _49;
+nbody.cpp:86:20: note: extracting lane for live stmt dy_53 = _51 - _52;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: _67 = dx_50 * powmult_66;
+nbody.cpp:86:20: note: vect_is_simple_use: operand _45 - _49, type of def: internal
+nbody.cpp:86:20: note: transform binary/unary operation.
+nbody.cpp:86:20: note: add new stmt: vect__67.63_174 = vect_dx_50.62_178 * _175;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: Fx_76 = PHI <Fx_68(13), 0.0(6)>
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: Fx_68 = _67 + Fx_76;
+nbody.cpp:86:20: note: vect_is_simple_use: operand dx_50 * powmult_66, type of def: internal
+nbody.cpp:86:20: note: vect_is_simple_use: operand Fx_76 = PHI <Fx_68(13), 0.0(6)>, type of def: internal
+nbody.cpp:86:20: note: transform binary/unary operation.
+nbody.cpp:86:20: note: add new stmt: vect_Fx_68.65_172 = vect__67.63_174 + vect_Fx_76.64_173;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: Fx_77 = PHI <Fx_68(7)>
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: _199 = dt_12 * Fx_77;
+nbody.cpp:86:20: note: vect_is_simple_use: operand Fx_77 = PHI <Fx_68(7)>, type of def: internal
+nbody.cpp:86:20: note: transform binary/unary operation.
+nbody.cpp:86:20: note: add new stmt: vect__199.67_170 = _185 * vect_Fx_77.66_171;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: prephitmp_200 = PHI <_199(8), 0.0(4)>
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: _31 = _26 + prephitmp_200;
+nbody.cpp:86:20: note: vect_is_simple_use: operand *_207.vx, type of def: internal
+nbody.cpp:86:20: note: vect_is_simple_use: operand prephitmp_200 = PHI <_199(8), 0.0(4)>, type of def: internal
+nbody.cpp:86:20: note: transform binary/unary operation.
+nbody.cpp:86:20: note: add new stmt: vect__31.69_168 = vect__26.55_187 + vect_prephitmp_200.68_169;
+nbody.cpp:86:20: note: ------>vectorizing SLP node starting from: *_207.vx = _31;
+nbody.cpp:86:20: note: vect_is_simple_use: operand _26 + prephitmp_200, type of def: internal
+nbody.cpp:86:20: note: vect_is_simple_use: operand _33 + prephitmp_202, type of def: internal
+nbody.cpp:86:20: note: transform store. ncopies = 1
+nbody.cpp:86:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: *_207.vx
+nbody.cpp:86:20: note: created vectp.71_167
+nbody.cpp:86:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.71_167] = vect__31.69_168;
+nbody.cpp:86:20: note: vectorizing stmts using SLP.
+nbody.cpp:86:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:86:20: note: ***** The result for vector mode V32QI would be the same
+BB 5 is always executed in loop 1
+BB 4 is always executed in loop 1
+BB 7 is always executed in loop 2
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:67:23: note: considering unrolling loop 2 at BB 9
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:88:20: note: considering unrolling loop 1 at BB 5
+BB 6 is always executed in loop 2
+BB 4 is always executed in loop 1
+BB 3 is always executed in loop 1
+BB 5 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 3's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:18:21: missed: Guard edge 4 --> 5 is not around the loop!
+nbody.cpp:50:22: optimized: loop vectorized using 8 byte vectors
+nbody.cpp:18:21: missed: couldn't vectorize loop
+nbody.cpp:30:52: missed: not vectorized: no vectype for stmt: _8 = _7->x;
+ scalar_type: float
+nbody.cpp:24:23: missed: couldn't vectorize loop
+nbody.cpp:30:36: missed: not vectorized: no vectype for stmt: _4 = _3->x;
+ scalar_type: float
+nbody.cpp:15:6: note: vectorized 1 loops in function.
+nbody.cpp:50:22: optimized: loop turned into non-loop; it never loops
+nbody.cpp:51:20: note: ***** Analysis succeeded with vector mode V8SF
+nbody.cpp:51:20: note: SLPing BB part
+nbody.cpp:43:20: note: Costing subgraph: 
+nbody.cpp:43:20: note: node 0x32dfcf8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _7->vx = _26;
+nbody.cpp:43:20: note: 	stmt 0 _7->vx = _26;
+nbody.cpp:43:20: note: 	stmt 1 _7->vy = _29;
+nbody.cpp:43:20: note: 	children 0x32dfd78
+nbody.cpp:43:20: note: node 0x32dfd78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _26 = _24 + _25;
+nbody.cpp:43:20: note: 	stmt 0 _26 = _24 + _25;
+nbody.cpp:43:20: note: 	stmt 1 _29 = _27 + _28;
+nbody.cpp:43:20: note: 	children 0x32dfdf8 0x32dfe78
+nbody.cpp:43:20: note: node 0x32dfdf8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _24 = _7->vx;
+nbody.cpp:43:20: note: 	stmt 0 _24 = _7->vx;
+nbody.cpp:43:20: note: 	stmt 1 _27 = _7->vy;
+nbody.cpp:43:20: note: node 0x32dfe78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _25 = dt_63(D) * Fx_233;
+nbody.cpp:43:20: note: 	stmt 0 _25 = dt_63(D) * Fx_233;
+nbody.cpp:43:20: note: 	stmt 1 _28 = dt_63(D) * Fy_232;
+nbody.cpp:43:20: note: 	children 0x32dfef8 0x32dff78
+nbody.cpp:43:20: note: node (external) 0x32dfef8 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:43:20: note: 	{ dt_63(D), dt_63(D) }
+nbody.cpp:43:20: note: node 0x32dff78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: Fx_233 = PHI <Fx_78(4)>
+nbody.cpp:43:20: note: 	stmt 0 Fx_233 = PHI <Fx_78(4)>
+nbody.cpp:43:20: note: 	stmt 1 Fy_232 = PHI <Fy_79(4)>
+nbody.cpp:43:20: note: 	children 0x32dfff8
+nbody.cpp:43:20: note: node 0x32dfff8 (max_nunits=2, refcnt=2) vector(2) float
+nbody.cpp:43:20: note: op template: Fx_78 = _18 + Fx_90;
+nbody.cpp:43:20: note: 	stmt 0 Fx_78 = _18 + Fx_90;
+nbody.cpp:43:20: note: 	stmt 1 Fy_79 = _19 + Fy_92;
+nbody.cpp:43:20: note: 	children 0x32e0078 0x32e02f8
+nbody.cpp:43:20: note: node 0x32e0078 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _18 = dx_72 / drPower32_77;
+nbody.cpp:43:20: note: 	stmt 0 _18 = dx_72 / drPower32_77;
+nbody.cpp:43:20: note: 	stmt 1 _19 = dy_73 / drPower32_77;
+nbody.cpp:43:20: note: 	children 0x32e00f8 0x32e0278
+nbody.cpp:43:20: note: node 0x32e00f8 (max_nunits=2, refcnt=1) const vector(2) float
+nbody.cpp:43:20: note: op template: dx_72 = _4 - _8;
+nbody.cpp:43:20: note: 	stmt 0 dx_72 = _4 - _8;
+nbody.cpp:43:20: note: 	stmt 1 dy_73 = _9 - _10;
+nbody.cpp:43:20: note: 	children 0x32e0178 0x32e01f8
+nbody.cpp:43:20: note: node 0x32e0178 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _4 = _3->x;
+nbody.cpp:43:20: note: 	stmt 0 _4 = _3->x;
+nbody.cpp:43:20: note: 	stmt 1 _9 = _3->y;
+nbody.cpp:43:20: note: node 0x32e01f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: _8 = _7->x;
+nbody.cpp:43:20: note: 	stmt 0 _8 = _7->x;
+nbody.cpp:43:20: note: 	stmt 1 _10 = _7->y;
+nbody.cpp:43:20: note: node (external) 0x32e0278 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:43:20: note: 	{ drPower32_77, drPower32_77 }
+nbody.cpp:43:20: note: node 0x32e02f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: op template: Fx_90 = PHI <Fx_78(12), 0.0(6)>
+nbody.cpp:43:20: note: 	stmt 0 Fx_90 = PHI <Fx_78(12), 0.0(6)>
+nbody.cpp:43:20: note: 	stmt 1 Fy_92 = PHI <Fy_79(12), 0.0(6)>
+nbody.cpp:43:20: note: 	children 0x32dfff8 0x32e0378
+nbody.cpp:43:20: note: node (constant) 0x32e0378 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:43:20: note: 	{ 0.0, 0.0 }
+nbody.cpp:43:20: note: Cost model analysis: 
+nbody.cpp:43:20: note: Cost model analysis for part in loop 1:
+  Vector cost: 84
+  Scalar cost: 160
+nbody.cpp:43:20: note: Cost model analysis for part in loop 3:
+  Vector cost: 136
+  Scalar cost: 216
+nbody.cpp:51:20: note: Costing subgraph: 
+nbody.cpp:51:20: note: node 0x32e0478 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: MEM[(float *)ivtmp_156] = _154;
+nbody.cpp:51:20: note: 	stmt 0 MEM[(float *)ivtmp_156] = _154;
+nbody.cpp:51:20: note: 	stmt 1 MEM[(float *)ivtmp_156 + 4B] = _152;
+nbody.cpp:51:20: note: 	children 0x32e04f8
+nbody.cpp:51:20: note: node 0x32e04f8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op: VEC_PERM_EXPR
+nbody.cpp:51:20: note: 	stmt 0 _154 = BIT_FIELD_REF <vect__42.116_159, 32, 0>;
+nbody.cpp:51:20: note: 	stmt 1 _152 = BIT_FIELD_REF <vect__42.116_159, 32, 32>;
+nbody.cpp:51:20: note: 	lane permutation { 0[0] 0[1] }
+nbody.cpp:51:20: note: 	children 0x32e0578
+nbody.cpp:51:20: note: node (external) 0x32e0578 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ }
+nbody.cpp:51:20: note: Cost model analysis: 
+nbody.cpp:51:20: note: Cost model analysis for part in loop 2:
+  Vector cost: 16
+  Scalar cost: 64
+nbody.cpp:51:20: note: Costing subgraph: 
+nbody.cpp:51:20: note: node 0x32e0678 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: MEM[(float *)ivtmp_148] = _147;
+nbody.cpp:51:20: note: 	stmt 0 MEM[(float *)ivtmp_148] = _147;
+nbody.cpp:51:20: note: 	stmt 1 MEM[(float *)ivtmp_148 + 4B] = _145;
+nbody.cpp:51:20: note: 	children 0x32e0778
+nbody.cpp:51:20: note: node (external) 0x32e0778 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ _147, _145 }
+nbody.cpp:51:20: note: Cost model analysis: 
+nbody.cpp:51:20: note: Cost model analysis for part in loop 2:
+  Vector cost: 20
+  Scalar cost: 32
+nbody.cpp:51:20: note: Costing subgraph: 
+nbody.cpp:51:20: note: node 0x32e0878 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _219->x = _215;
+nbody.cpp:51:20: note: 	stmt 0 _219->x = _215;
+nbody.cpp:51:20: note: 	stmt 1 _219->y = _210;
+nbody.cpp:51:20: note: 	children 0x32e08f8
+nbody.cpp:51:20: note: node 0x32e08f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _215 = _218 + _216;
+nbody.cpp:51:20: note: 	stmt 0 _215 = _218 + _216;
+nbody.cpp:51:20: note: 	stmt 1 _210 = _213 + _211;
+nbody.cpp:51:20: note: 	children 0x32e0978 0x32e09f8
+nbody.cpp:51:20: note: node 0x32e0978 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _218 = _219->x;
+nbody.cpp:51:20: note: 	stmt 0 _218 = _219->x;
+nbody.cpp:51:20: note: 	stmt 1 _213 = _219->y;
+nbody.cpp:51:20: note: node 0x32e09f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _216 = _217 * dt_63(D);
+nbody.cpp:51:20: note: 	stmt 0 _216 = _217 * dt_63(D);
+nbody.cpp:51:20: note: 	stmt 1 _211 = _212 * dt_63(D);
+nbody.cpp:51:20: note: 	children 0x32e0a78 0x32e0af8
+nbody.cpp:51:20: note: node 0x32e0a78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _217 = _219->vx;
+nbody.cpp:51:20: note: 	stmt 0 _217 = _219->vx;
+nbody.cpp:51:20: note: 	stmt 1 _212 = _219->vy;
+nbody.cpp:51:20: note: node (external) 0x32e0af8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ dt_63(D), dt_63(D) }
+nbody.cpp:51:20: note: Cost model analysis: 
+nbody.cpp:51:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 84
+  Scalar cost: 160
+nbody.cpp:51:20: note: Basic block will be vectorized using SLP
+nbody.cpp:51:20: note: Vectorizing SLP tree:
+nbody.cpp:51:20: note: node 0x32dfcf8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _7->vx = _26;
+nbody.cpp:51:20: note: 	stmt 0 _7->vx = _26;
+nbody.cpp:51:20: note: 	stmt 1 _7->vy = _29;
+nbody.cpp:51:20: note: 	children 0x32dfd78
+nbody.cpp:51:20: note: node 0x32dfd78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _26 = _24 + _25;
+nbody.cpp:51:20: note: 	stmt 0 _26 = _24 + _25;
+nbody.cpp:51:20: note: 	stmt 1 _29 = _27 + _28;
+nbody.cpp:51:20: note: 	children 0x32dfdf8 0x32dfe78
+nbody.cpp:51:20: note: node 0x32dfdf8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _24 = _7->vx;
+nbody.cpp:51:20: note: 	stmt 0 _24 = _7->vx;
+nbody.cpp:51:20: note: 	stmt 1 _27 = _7->vy;
+nbody.cpp:51:20: note: node 0x32dfe78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _25 = dt_63(D) * Fx_233;
+nbody.cpp:51:20: note: 	stmt 0 _25 = dt_63(D) * Fx_233;
+nbody.cpp:51:20: note: 	stmt 1 _28 = dt_63(D) * Fy_232;
+nbody.cpp:51:20: note: 	children 0x32dfef8 0x32dff78
+nbody.cpp:51:20: note: node (external) 0x32dfef8 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:51:20: note: 	{ dt_63(D), dt_63(D) }
+nbody.cpp:51:20: note: node 0x32dff78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: Fx_233 = PHI <Fx_78(4)>
+nbody.cpp:51:20: note: 	stmt 0 Fx_233 = PHI <Fx_78(4)>
+nbody.cpp:51:20: note: 	stmt 1 Fy_232 = PHI <Fy_79(4)>
+nbody.cpp:51:20: note: 	children 0x32dfff8
+nbody.cpp:51:20: note: node 0x32dfff8 (max_nunits=2, refcnt=2) vector(2) float
+nbody.cpp:51:20: note: op template: Fx_78 = _18 + Fx_90;
+nbody.cpp:51:20: note: 	stmt 0 Fx_78 = _18 + Fx_90;
+nbody.cpp:51:20: note: 	stmt 1 Fy_79 = _19 + Fy_92;
+nbody.cpp:51:20: note: 	children 0x32e0078 0x32e02f8
+nbody.cpp:51:20: note: node 0x32e0078 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _18 = dx_72 / drPower32_77;
+nbody.cpp:51:20: note: 	stmt 0 _18 = dx_72 / drPower32_77;
+nbody.cpp:51:20: note: 	stmt 1 _19 = dy_73 / drPower32_77;
+nbody.cpp:51:20: note: 	children 0x32e00f8 0x32e0278
+nbody.cpp:51:20: note: node 0x32e00f8 (max_nunits=2, refcnt=1) const vector(2) float
+nbody.cpp:51:20: note: op template: dx_72 = _4 - _8;
+nbody.cpp:51:20: note: 	stmt 0 dx_72 = _4 - _8;
+nbody.cpp:51:20: note: 	stmt 1 dy_73 = _9 - _10;
+nbody.cpp:51:20: note: 	children 0x32e0178 0x32e01f8
+nbody.cpp:51:20: note: node 0x32e0178 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _4 = _3->x;
+nbody.cpp:51:20: note: 	stmt 0 _4 = _3->x;
+nbody.cpp:51:20: note: 	stmt 1 _9 = _3->y;
+nbody.cpp:51:20: note: node 0x32e01f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _8 = _7->x;
+nbody.cpp:51:20: note: 	stmt 0 _8 = _7->x;
+nbody.cpp:51:20: note: 	stmt 1 _10 = _7->y;
+nbody.cpp:51:20: note: node (external) 0x32e0278 (max_nunits=1, refcnt=1) const vector(2) float
+nbody.cpp:51:20: note: 	{ drPower32_77, drPower32_77 }
+nbody.cpp:51:20: note: node 0x32e02f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: Fx_90 = PHI <Fx_78(12), 0.0(6)>
+nbody.cpp:51:20: note: 	stmt 0 Fx_90 = PHI <Fx_78(12), 0.0(6)>
+nbody.cpp:51:20: note: 	stmt 1 Fy_92 = PHI <Fy_79(12), 0.0(6)>
+nbody.cpp:51:20: note: 	children 0x32dfff8 0x32e0378
+nbody.cpp:51:20: note: node (constant) 0x32e0378 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ 0.0, 0.0 }
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _24 = _7->vx;
+nbody.cpp:51:20: note: transform load. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _7->vx
+nbody.cpp:51:20: note: created vectp.120_35
+nbody.cpp:51:20: note: add new stmt: vect__24.121_190 = MEM <vector(2) float> [(float *)vectp.120_35];
+nbody.cpp:51:20: note: add new stmt: vectp.120_36 = vectp.120_35 + 4;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _4 = _3->x;
+nbody.cpp:51:20: note: transform load. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _3->x
+nbody.cpp:51:20: note: created vectp.123_38
+nbody.cpp:51:20: note: add new stmt: vect__4.124_39 = MEM <vector(2) float> [(float *)vectp.123_38];
+nbody.cpp:51:20: note: add new stmt: vectp.123_42 = vectp.123_38 + 4;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _8 = _7->x;
+nbody.cpp:51:20: note: transform load. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _7->x
+nbody.cpp:51:20: note: created vectp.126_43
+nbody.cpp:51:20: note: add new stmt: vect__8.127_44 = MEM <vector(2) float> [(float *)vectp.126_43];
+nbody.cpp:51:20: note: add new stmt: vectp.126_45 = vectp.126_43 + 4;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: dx_72 = _4 - _8;
+nbody.cpp:51:20: note: vect_is_simple_use: operand _3->x, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand _7->x, type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect_dx_72.128_46 = vect__4.124_39 - vect__8.127_44;
+nbody.cpp:51:20: note: extracting lane for live stmt dx_72 = _4 - _8;
+nbody.cpp:51:20: note: extracting lane for live stmt dy_73 = _9 - _10;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _18 = dx_72 / drPower32_77;
+nbody.cpp:51:20: note: vect_is_simple_use: operand _4 - _8, type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect__18.129_50 = vect_dx_72.128_46 / _49;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: Fx_90 = PHI <Fx_78(12), 0.0(6)>
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: Fx_78 = _18 + Fx_90;
+nbody.cpp:51:20: note: vect_is_simple_use: operand dx_72 / drPower32_77, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand Fx_90 = PHI <Fx_78(12), 0.0(6)>, type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect_Fx_78.131_67 = vect__18.129_50 + vect_Fx_90.130_141;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: Fx_233 = PHI <Fx_78(4)>
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _25 = dt_63(D) * Fx_233;
+nbody.cpp:51:20: note: vect_is_simple_use: operand Fx_233 = PHI <Fx_78(4)>, type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect__25.133_164 = _173 * vect_Fx_233.132_234;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _26 = _24 + _25;
+nbody.cpp:51:20: note: vect_is_simple_use: operand _7->vx, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand dt_63(D) * Fx_233, type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect__26.134_163 = vect__24.121_190 + vect__25.133_164;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _7->vx = _26;
+nbody.cpp:51:20: note: vect_is_simple_use: operand _24 + _25, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand _27 + _28, type of def: internal
+nbody.cpp:51:20: note: transform store. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _7->vx
+nbody.cpp:51:20: note: created vectp.136_127
+nbody.cpp:51:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.136_127] = vect__26.134_163;
+nbody.cpp:51:20: note: vectorizing stmts using SLP.
+nbody.cpp:51:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:51:20: note: Vectorizing SLP tree:
+nbody.cpp:51:20: note: node 0x32e0478 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: MEM[(float *)ivtmp_156] = _154;
+nbody.cpp:51:20: note: 	stmt 0 MEM[(float *)ivtmp_156] = _154;
+nbody.cpp:51:20: note: 	stmt 1 MEM[(float *)ivtmp_156 + 4B] = _152;
+nbody.cpp:51:20: note: 	children 0x32e04f8
+nbody.cpp:51:20: note: node 0x32e04f8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op: VEC_PERM_EXPR
+nbody.cpp:51:20: note: 	stmt 0 _154 = BIT_FIELD_REF <vect__42.116_159, 32, 0>;
+nbody.cpp:51:20: note: 	stmt 1 _152 = BIT_FIELD_REF <vect__42.116_159, 32, 32>;
+nbody.cpp:51:20: note: 	lane permutation { 0[0] 0[1] }
+nbody.cpp:51:20: note: 	children 0x32e0578
+nbody.cpp:51:20: note: node (external) 0x32e0578 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ }
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _154 = BIT_FIELD_REF <vect__42.116_159, 32, 0>;
+nbody.cpp:51:20: note: vectorizing permutation op0[0] op0[1] (repeat 2)
+
+nbody.cpp:51:20: note: vectorizing permutation op0[0] op0[1] (repeat 2)
+
+nbody.cpp:51:20: note: as vops0[0][0] vops0[0][1], vops0[0][2] vops0[0][3], vops0[0][4] vops0[0][5]
+nbody.cpp:51:20: note: add new stmt: _129 = vect__42.116_159;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: MEM[(float *)ivtmp_156] = _154;
+nbody.cpp:51:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__42.116_159, 32, 0>, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__42.116_159, 32, 32>, type of def: internal
+nbody.cpp:51:20: note: transform store. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: MEM[(float *)ivtmp_156]
+nbody.cpp:51:20: note: created vectp.138_130
+nbody.cpp:51:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.138_130] = _129;
+nbody.cpp:51:20: note: vectorizing stmts using SLP.
+nbody.cpp:51:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:51:20: note: Vectorizing SLP tree:
+nbody.cpp:51:20: note: node 0x32e0678 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: MEM[(float *)ivtmp_148] = _147;
+nbody.cpp:51:20: note: 	stmt 0 MEM[(float *)ivtmp_148] = _147;
+nbody.cpp:51:20: note: 	stmt 1 MEM[(float *)ivtmp_148 + 4B] = _145;
+nbody.cpp:51:20: note: 	children 0x32e0778
+nbody.cpp:51:20: note: node (external) 0x32e0778 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ _147, _145 }
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: MEM[(float *)ivtmp_148] = _147;
+nbody.cpp:51:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__42.116_157, 32, 0>, type of def: internal
+nbody.cpp:51:20: note: transform store. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: MEM[(float *)ivtmp_148]
+nbody.cpp:51:20: note: created vectp.140_133
+nbody.cpp:51:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.140_133] = _132;
+nbody.cpp:51:20: note: vectorizing stmts using SLP.
+nbody.cpp:51:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:51:20: note: Vectorizing SLP tree:
+nbody.cpp:51:20: note: node 0x32e0878 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _219->x = _215;
+nbody.cpp:51:20: note: 	stmt 0 _219->x = _215;
+nbody.cpp:51:20: note: 	stmt 1 _219->y = _210;
+nbody.cpp:51:20: note: 	children 0x32e08f8
+nbody.cpp:51:20: note: node 0x32e08f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _215 = _218 + _216;
+nbody.cpp:51:20: note: 	stmt 0 _215 = _218 + _216;
+nbody.cpp:51:20: note: 	stmt 1 _210 = _213 + _211;
+nbody.cpp:51:20: note: 	children 0x32e0978 0x32e09f8
+nbody.cpp:51:20: note: node 0x32e0978 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _218 = _219->x;
+nbody.cpp:51:20: note: 	stmt 0 _218 = _219->x;
+nbody.cpp:51:20: note: 	stmt 1 _213 = _219->y;
+nbody.cpp:51:20: note: node 0x32e09f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _216 = _217 * dt_63(D);
+nbody.cpp:51:20: note: 	stmt 0 _216 = _217 * dt_63(D);
+nbody.cpp:51:20: note: 	stmt 1 _211 = _212 * dt_63(D);
+nbody.cpp:51:20: note: 	children 0x32e0a78 0x32e0af8
+nbody.cpp:51:20: note: node 0x32e0a78 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: op template: _217 = _219->vx;
+nbody.cpp:51:20: note: 	stmt 0 _217 = _219->vx;
+nbody.cpp:51:20: note: 	stmt 1 _212 = _219->vy;
+nbody.cpp:51:20: note: node (external) 0x32e0af8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:51:20: note: 	{ dt_63(D), dt_63(D) }
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _218 = _219->x;
+nbody.cpp:51:20: note: transform load. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _219->x
+nbody.cpp:51:20: note: created vectp.142_135
+nbody.cpp:51:20: note: add new stmt: vect__218.143_136 = MEM <vector(2) float> [(float *)vectp.142_135];
+nbody.cpp:51:20: note: add new stmt: vectp.142_137 = vectp.142_135 + 16;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _217 = _219->vx;
+nbody.cpp:51:20: note: transform load. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _219->vx
+nbody.cpp:51:20: note: created vectp.145_138
+nbody.cpp:51:20: note: add new stmt: vect__217.146_66 = MEM <vector(2) float> [(float *)vectp.145_138];
+nbody.cpp:51:20: note: add new stmt: vectp.145_65 = vectp.145_138 + 16;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _216 = _217 * dt_63(D);
+nbody.cpp:51:20: note: vect_is_simple_use: operand _219->vx, type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect__216.147_172 = vect__217.146_66 * _64;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _215 = _218 + _216;
+nbody.cpp:51:20: note: vect_is_simple_use: operand _219->x, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand _217 * dt_63(D), type of def: internal
+nbody.cpp:51:20: note: transform binary/unary operation.
+nbody.cpp:51:20: note: add new stmt: vect__215.148_178 = vect__218.143_136 + vect__216.147_172;
+nbody.cpp:51:20: note: ------>vectorizing SLP node starting from: _219->x = _215;
+nbody.cpp:51:20: note: vect_is_simple_use: operand _218 + _216, type of def: internal
+nbody.cpp:51:20: note: vect_is_simple_use: operand _213 + _211, type of def: internal
+nbody.cpp:51:20: note: transform store. ncopies = 1
+nbody.cpp:51:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _219->x
+nbody.cpp:51:20: note: created vectp.150_183
+nbody.cpp:51:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.150_183] = vect__215.148_178;
+nbody.cpp:51:20: note: vectorizing stmts using SLP.
+nbody.cpp:51:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:51:20: note: ***** The result for vector mode V32QI would be the same
+BB 7 is always executed in loop 2
+BB 5 is always executed in loop 1
+BB 4 is always executed in loop 1
+BB 6 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 3's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:50:22: note: considering unrolling loop 2 at BB 9
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:24:23: note: considering unrolling loop 3 at BB 4
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:18:21: note: considering unrolling loop 1 at BB 6
+BB 3 is always executed in loop 2
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+nbody.cpp:93:22: optimized: loop vectorized using 8 byte vectors
+nbody.cpp:57:6: note: vectorized 1 loops in function.
+nbody.cpp:93:22: optimized: loop turned into non-loop; it never loops
+nbody.cpp:57:6: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13MoveParticlesiP12ParticleTypef._omp_fn.0, &.omp_data_o.2, 0, 0);
+nbody.cpp:94:20: note: ***** Analysis succeeded with vector mode V8SF
+nbody.cpp:94:20: note: SLPing BB part
+nbody.cpp:94:20: note: Costing subgraph: 
+nbody.cpp:94:20: note: node 0x32dfcf8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_107] = _109;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_107] = _109;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_107 + 4B] = _111;
+nbody.cpp:94:20: note: 	children 0x32dfd78
+nbody.cpp:94:20: note: node 0x32dfd78 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op: VEC_PERM_EXPR
+nbody.cpp:94:20: note: 	stmt 0 _109 = BIT_FIELD_REF <vect__7.197_104, 32, 0>;
+nbody.cpp:94:20: note: 	stmt 1 _111 = BIT_FIELD_REF <vect__7.197_104, 32, 32>;
+nbody.cpp:94:20: note: 	lane permutation { 0[0] 0[1] }
+nbody.cpp:94:20: note: 	children 0x32dfdf8
+nbody.cpp:94:20: note: node (external) 0x32dfdf8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ }
+nbody.cpp:94:20: note: Cost model analysis: 
+nbody.cpp:94:20: note: Cost model analysis for part in loop 2:
+  Vector cost: 16
+  Scalar cost: 64
+nbody.cpp:94:20: note: Costing subgraph: 
+nbody.cpp:94:20: note: node 0x32dfef8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_115] = _116;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_115] = _116;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_115 + 4B] = _118;
+nbody.cpp:94:20: note: 	children 0x32dfff8
+nbody.cpp:94:20: note: node (external) 0x32dfff8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ _116, _118 }
+nbody.cpp:94:20: note: Cost model analysis: 
+nbody.cpp:94:20: note: Cost model analysis for part in loop 2:
+  Vector cost: 20
+  Scalar cost: 32
+nbody.cpp:94:20: note: Costing subgraph: 
+nbody.cpp:94:20: note: node 0x32e00f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _48->x = _44;
+nbody.cpp:94:20: note: 	stmt 0 _48->x = _44;
+nbody.cpp:94:20: note: 	stmt 1 _48->y = _39;
+nbody.cpp:94:20: note: 	children 0x32e0178
+nbody.cpp:94:20: note: node 0x32e0178 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _44 = _47 + _45;
+nbody.cpp:94:20: note: 	stmt 0 _44 = _47 + _45;
+nbody.cpp:94:20: note: 	stmt 1 _39 = _42 + _40;
+nbody.cpp:94:20: note: 	children 0x32e01f8 0x32e0278
+nbody.cpp:94:20: note: node 0x32e01f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _47 = _48->x;
+nbody.cpp:94:20: note: 	stmt 0 _47 = _48->x;
+nbody.cpp:94:20: note: 	stmt 1 _42 = _48->y;
+nbody.cpp:94:20: note: node 0x32e0278 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _45 = _46 * dt_19(D);
+nbody.cpp:94:20: note: 	stmt 0 _45 = _46 * dt_19(D);
+nbody.cpp:94:20: note: 	stmt 1 _40 = _41 * dt_19(D);
+nbody.cpp:94:20: note: 	children 0x32e02f8 0x32e0378
+nbody.cpp:94:20: note: node 0x32e02f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _46 = _48->vx;
+nbody.cpp:94:20: note: 	stmt 0 _46 = _48->vx;
+nbody.cpp:94:20: note: 	stmt 1 _41 = _48->vy;
+nbody.cpp:94:20: note: node (external) 0x32e0378 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ dt_19(D), dt_19(D) }
+nbody.cpp:94:20: note: Cost model analysis: 
+nbody.cpp:94:20: note: Cost model analysis for part in loop 0:
+  Vector cost: 84
+  Scalar cost: 160
+nbody.cpp:94:20: note: Basic block will be vectorized using SLP
+nbody.cpp:94:20: note: Vectorizing SLP tree:
+nbody.cpp:94:20: note: node 0x32dfcf8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_107] = _109;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_107] = _109;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_107 + 4B] = _111;
+nbody.cpp:94:20: note: 	children 0x32dfd78
+nbody.cpp:94:20: note: node 0x32dfd78 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op: VEC_PERM_EXPR
+nbody.cpp:94:20: note: 	stmt 0 _109 = BIT_FIELD_REF <vect__7.197_104, 32, 0>;
+nbody.cpp:94:20: note: 	stmt 1 _111 = BIT_FIELD_REF <vect__7.197_104, 32, 32>;
+nbody.cpp:94:20: note: 	lane permutation { 0[0] 0[1] }
+nbody.cpp:94:20: note: 	children 0x32dfdf8
+nbody.cpp:94:20: note: node (external) 0x32dfdf8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ }
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _109 = BIT_FIELD_REF <vect__7.197_104, 32, 0>;
+nbody.cpp:94:20: note: vectorizing permutation op0[0] op0[1] (repeat 2)
+
+nbody.cpp:94:20: note: vectorizing permutation op0[0] op0[1] (repeat 2)
+
+nbody.cpp:94:20: note: as vops0[0][0] vops0[0][1], vops0[0][2] vops0[0][3], vops0[0][4] vops0[0][5]
+nbody.cpp:94:20: note: add new stmt: _52 = vect__7.197_104;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: MEM[(float *)ivtmp_107] = _109;
+nbody.cpp:94:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__7.197_104, 32, 0>, type of def: internal
+nbody.cpp:94:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__7.197_104, 32, 32>, type of def: internal
+nbody.cpp:94:20: note: transform store. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: MEM[(float *)ivtmp_107]
+nbody.cpp:94:20: note: created vectp.201_33
+nbody.cpp:94:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.201_33] = _52;
+nbody.cpp:94:20: note: vectorizing stmts using SLP.
+nbody.cpp:94:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:94:20: note: Vectorizing SLP tree:
+nbody.cpp:94:20: note: node 0x32dfef8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_115] = _116;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_115] = _116;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_115 + 4B] = _118;
+nbody.cpp:94:20: note: 	children 0x32dfff8
+nbody.cpp:94:20: note: node (external) 0x32dfff8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ _116, _118 }
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: MEM[(float *)ivtmp_115] = _116;
+nbody.cpp:94:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__7.197_106, 32, 0>, type of def: internal
+nbody.cpp:94:20: note: transform store. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: MEM[(float *)ivtmp_115]
+nbody.cpp:94:20: note: created vectp.203_3
+nbody.cpp:94:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.203_3] = _2;
+nbody.cpp:94:20: note: vectorizing stmts using SLP.
+nbody.cpp:94:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:94:20: note: Vectorizing SLP tree:
+nbody.cpp:94:20: note: node 0x32e00f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _48->x = _44;
+nbody.cpp:94:20: note: 	stmt 0 _48->x = _44;
+nbody.cpp:94:20: note: 	stmt 1 _48->y = _39;
+nbody.cpp:94:20: note: 	children 0x32e0178
+nbody.cpp:94:20: note: node 0x32e0178 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _44 = _47 + _45;
+nbody.cpp:94:20: note: 	stmt 0 _44 = _47 + _45;
+nbody.cpp:94:20: note: 	stmt 1 _39 = _42 + _40;
+nbody.cpp:94:20: note: 	children 0x32e01f8 0x32e0278
+nbody.cpp:94:20: note: node 0x32e01f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _47 = _48->x;
+nbody.cpp:94:20: note: 	stmt 0 _47 = _48->x;
+nbody.cpp:94:20: note: 	stmt 1 _42 = _48->y;
+nbody.cpp:94:20: note: node 0x32e0278 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _45 = _46 * dt_19(D);
+nbody.cpp:94:20: note: 	stmt 0 _45 = _46 * dt_19(D);
+nbody.cpp:94:20: note: 	stmt 1 _40 = _41 * dt_19(D);
+nbody.cpp:94:20: note: 	children 0x32e02f8 0x32e0378
+nbody.cpp:94:20: note: node 0x32e02f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _46 = _48->vx;
+nbody.cpp:94:20: note: 	stmt 0 _46 = _48->vx;
+nbody.cpp:94:20: note: 	stmt 1 _41 = _48->vy;
+nbody.cpp:94:20: note: node (external) 0x32e0378 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ dt_19(D), dt_19(D) }
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _47 = _48->x;
+nbody.cpp:94:20: note: transform load. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _48->x
+nbody.cpp:94:20: note: created vectp.205_4
+nbody.cpp:94:20: note: add new stmt: vect__47.206_90 = MEM <vector(2) float> [(float *)vectp.205_4];
+nbody.cpp:94:20: note: add new stmt: vectp.205_5 = vectp.205_4 + 16;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _46 = _48->vx;
+nbody.cpp:94:20: note: transform load. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _48->vx
+nbody.cpp:94:20: note: created vectp.208_6
+nbody.cpp:94:20: note: add new stmt: vect__46.209_7 = MEM <vector(2) float> [(float *)vectp.208_6];
+nbody.cpp:94:20: note: add new stmt: vectp.208_8 = vectp.208_6 + 16;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _45 = _46 * dt_19(D);
+nbody.cpp:94:20: note: vect_is_simple_use: operand _48->vx, type of def: internal
+nbody.cpp:94:20: note: transform binary/unary operation.
+nbody.cpp:94:20: note: add new stmt: vect__45.210_10 = vect__46.209_7 * _9;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _44 = _47 + _45;
+nbody.cpp:94:20: note: vect_is_simple_use: operand _48->x, type of def: internal
+nbody.cpp:94:20: note: vect_is_simple_use: operand _46 * dt_19(D), type of def: internal
+nbody.cpp:94:20: note: transform binary/unary operation.
+nbody.cpp:94:20: note: add new stmt: vect__44.211_11 = vect__47.206_90 + vect__45.210_10;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _48->x = _44;
+nbody.cpp:94:20: note: vect_is_simple_use: operand _47 + _45, type of def: internal
+nbody.cpp:94:20: note: vect_is_simple_use: operand _42 + _40, type of def: internal
+nbody.cpp:94:20: note: transform store. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _48->x
+nbody.cpp:94:20: note: created vectp.213_12
+nbody.cpp:94:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.213_12] = vect__44.211_11;
+nbody.cpp:94:20: note: vectorizing stmts using SLP.
+nbody.cpp:94:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:94:20: note: ***** The result for vector mode V32QI would be the same
+BB 3 is always executed in loop 2
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+nbody.cpp:93:22: note: considering unrolling loop 2 at BB 5
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+BB 3 is always executed in loop 1
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:104:5: missed: couldn't vectorize loop
+nbody.cpp:104:5: missed: not vectorized: control flow in loop.
+nbody.cpp:102:6: note: vectorized 0 loops in function.
+nbody.cpp:125:13: missed: statement clobbers memory: printf ("%d vz %g %g %g\n", i_39, _64, _63, _62);
+nbody.cpp:121:13: missed: statement clobbers memory: printf ("%d vy %g %g %g\n", i_56, _54, _53, _52);
+nbody.cpp:117:13: missed: statement clobbers memory: printf ("%d vx %g %g %g\n", i_59, _46, _45, _44);
+nbody.cpp:113:13: missed: statement clobbers memory: printf ("%d z %g %g %g\n", i_65, _36, _35, _34);
+nbody.cpp:109:13: missed: statement clobbers memory: printf ("%d y %g %g %g\n", i_67, _24, _23, _22);
+nbody.cpp:105:13: missed: statement clobbers memory: printf ("%d x %g %g %g\n", i_88, _12, _11, _10);
+nbody.cpp:105:13: note: ***** Analysis failed with vector mode V8SF
+nbody.cpp:105:13: note: ***** Skipping vector mode V32QI, which would repeat the analysis for V8SF
+BB 3 is always executed in loop 1
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+nbody.cpp:103:20: note: considering unrolling loop 1 at BB 4
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+BB 8 is always executed in loop 2
+BB 6 is always executed in loop 2
+BB 5 is always executed in loop 1
+BB 3 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+/usr/include.original/c++/13/bits/random.tcc:412:42: optimized: loop vectorized using 32 byte vectors
+/usr/include.original/c++/13/bits/random.tcc:404:32: optimized: loop vectorized using 32 byte vectors
+/usr/include.original/c++/13/bits/random.tcc:404:32: optimized: loop vectorized using 16 byte vectors
+/usr/include.original/c++/13/bits/random.tcc:397:5: note: vectorized 2 loops in function.
+/usr/include.original/c++/13/bits/random.tcc:404:32: optimized: loop turned into non-loop; it never loops
+/usr/include.original/c++/13/bits/random.tcc:397:5: optimized: loop turned into non-loop; it never loops
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V4DI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** The result for vector mode V32QI would be the same
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V16QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V16QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V8QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Analysis failed with vector mode V8QI
+/usr/include.original/c++/13/bits/random.tcc:420:17: note: ***** Re-trying analysis with vector mode V4QI
+/usr/include.original/c++/13/bits/random.tcc:422:38: note: ***** Analysis failed with vector mode V4QI
+BB 6 is always executed in loop 2
+BB 3 is always executed in loop 1
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+/usr/include.original/c++/13/bits/random.tcc:412:42: note: considering unrolling loop 2 at BB 5
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+/usr/include.original/c++/13/bits/random.tcc:404:32: note: considering unrolling loop 1 at BB 3
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+BB 37 is always executed in loop 3
+BB 38 is always executed in loop 11
+BB 35 is always executed in loop 2
+BB 8 is always executed in loop 1
+BB 6 is always executed in loop 4
+loop 3's coldest_outermost_loop is 3, hotter_than_inner_loop is NULL
+loop 11's coldest_outermost_loop is 3, hotter_than_inner_loop is NULL
+loop 2's coldest_outermost_loop is 2, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 4's coldest_outermost_loop is 4, hotter_than_inner_loop is NULL
+nbody.cpp:159:20: optimized: Loop 2 distributed: split to 0 loops and 1 library calls.
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+nbody.cpp:174:5: missed: couldn't vectorize loop
+nbody.cpp:174:5: missed: not vectorized: control flow in loop.
+nbody.cpp:93:22: optimized: loop vectorized using 8 byte vectors
+nbody.cpp:147:20: missed: couldn't vectorize loop
+nbody.cpp:147:20: missed: not vectorized: control flow in loop.
+/usr/include.original/c++/13/bits/random.tcc:333:32: missed: couldn't vectorize loop
+/usr/include.original/c++/13/bits/random.tcc:335:14: missed: not vectorized: no vectype for stmt: __x_109 = MEM[(struct mersenne_twister_engine *)&generator]._M_x[_108];
+ scalar_type: long unsigned int
+nbody.cpp:132:5: note: vectorized 1 loops in function.
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+nbody.cpp:93:22: optimized: loop turned into non-loop; it never loops
+/usr/include/stdlib.h:364:23: missed: statement clobbers memory: _105 = strtol (_1, 0B, 10);
+nbody.cpp:142:55: missed: statement clobbers memory: __cxa_throw_bad_array_new_length ();
+nbody.cpp:142:55: missed: statement clobbers memory: _60 = operator new [] (iftmp.12_58);
+nbody.cpp:157:65: missed: statement clobbers memory: _42 = operator new [] (0);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+/usr/include.original/c++/13/bits/random.tcc:459:13: missed: statement clobbers memory: std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>::_M_gen_rand (&generator);
+nbody.cpp:157:65: missed: statement clobbers memory: _62 = operator new [] (iftmp.12_58);
+nbody.cpp:160:27: missed: statement clobbers memory: __builtin_memcpy (_62, _60, _519);
+nbody.cpp:163:21: missed: statement clobbers memory: MoveParticles_Orig (iftmp.11_55, _40, 9.99999977648258209228515625e-3);
+nbody.cpp:166:9: missed: statement clobbers memory: __builtin_puts (&"\n\x1b[1mNBODY Version 03\x1b[0m"[0]);
+nbody.cpp:167:9: missed: statement clobbers memory: _11 = omp_get_max_threads ();
+nbody.cpp:167:9: missed: statement clobbers memory: printf ("\nPropagating %d particles using %d threads on %s...\n\n", iftmp.11_55, _11, "CPU");
+nbody.cpp:171:9: missed: statement clobbers memory: printf ("\x1b[1m%5s %10s %10s %8s\x1b[0m\n", "Step", "Time, s", "Interact/s", "GFLOP/s");
+nbody.cpp:171:98: missed: statement clobbers memory: fflush (stdout.14_12);
+nbody.cpp:174:40: missed: statement clobbers memory: tStart_79 = omp_get_wtime ();
+nbody.cpp:132:5: missed: statement clobbers memory: __builtin_GOMP_parallel (_Z13MoveParticlesiP12ParticleTypef._omp_fn.0, &.omp_data_o.2, 0, 0);
+nbody.cpp:176:38: missed: statement clobbers memory: tEnd_82 = omp_get_wtime ();
+nbody.cpp:186:11: missed: statement clobbers memory: printf ("%5d %10.3e %10.3e %8.1f %s\n", step_116, _28, _32, _29, "*");
+nbody.cpp:188:11: missed: statement clobbers memory: fflush (stdout.16_33);
+nbody.cpp:192:35: missed: statement clobbers memory: _90 = compare_particle_arrays (iftmp.11_55, _40, _60);
+nbody.cpp:193:15: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:194:15: missed: statement clobbers memory: __builtin_puts (&"\x1b[31mDO PANIC: The final result is wrong \x1b[0m"[0]);
+nbody.cpp:195:15: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:186:11: missed: statement clobbers memory: printf ("%5d %10.3e %10.3e %8.1f %s\n", step_116, _21, _37, _22, "");
+nbody.cpp:188:11: missed: statement clobbers memory: fflush (stdout.16_123);
+nbody.cpp:202:9: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:203:9: missed: statement clobbers memory: printf ("\x1b[1m%s %4s \x1b[32m%10.1f +- %.1f GFLOP/s\x1b[0m\n", "Average performance:", "", rate_69, dRate_70);
+nbody.cpp:205:9: missed: statement clobbers memory: __builtin_puts (&"-----------------------------------------------------"[0]);
+nbody.cpp:206:9: missed: statement clobbers memory: __builtin_puts (&"* - warm-up, not included in average."[0]);
+nbody.cpp:207:9: missed: statement clobbers memory: __builtin_puts (&"The final result after 1 iteration was correct.\n"[0]);
+nbody.cpp:209:12: missed: statement clobbers memory: operator delete [] (_60);
+nbody.cpp:210:12: missed: statement clobbers memory: operator delete [] (_40);
+nbody.cpp:94:20: note: ***** Analysis succeeded with vector mode V4DI
+nbody.cpp:94:20: note: SLPing BB part
+nbody.cpp:94:20: note: Costing subgraph: 
+nbody.cpp:94:20: note: node 0x36b7df8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_451] = _449;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_451] = _449;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_451 + 4B] = _447;
+nbody.cpp:94:20: note: 	children 0x36b7e78
+nbody.cpp:94:20: note: node 0x36b7e78 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op: VEC_PERM_EXPR
+nbody.cpp:94:20: note: 	stmt 0 _449 = BIT_FIELD_REF <vect__322.359_454, 32, 0>;
+nbody.cpp:94:20: note: 	stmt 1 _447 = BIT_FIELD_REF <vect__322.359_454, 32, 32>;
+nbody.cpp:94:20: note: 	lane permutation { 0[0] 0[1] }
+nbody.cpp:94:20: note: 	children 0x36b7ef8
+nbody.cpp:94:20: note: node (external) 0x36b7ef8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ }
+nbody.cpp:94:20: note: Cost model analysis: 
+nbody.cpp:94:20: note: Cost model analysis for part in loop 11:
+  Vector cost: 16
+  Scalar cost: 64
+nbody.cpp:94:20: note: Costing subgraph: 
+nbody.cpp:94:20: note: node 0x36b7ff8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_443] = _442;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_443] = _442;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_443 + 4B] = _440;
+nbody.cpp:94:20: note: 	children 0x36b80f8
+nbody.cpp:94:20: note: node (external) 0x36b80f8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ _442, _440 }
+nbody.cpp:94:20: note: Cost model analysis: 
+nbody.cpp:94:20: note: Cost model analysis for part in loop 11:
+  Vector cost: 20
+  Scalar cost: 32
+nbody.cpp:94:20: note: Costing subgraph: 
+nbody.cpp:94:20: note: node 0x36b81f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _515->x = _507;
+nbody.cpp:94:20: note: 	stmt 0 _515->x = _507;
+nbody.cpp:94:20: note: 	stmt 1 _515->y = _502;
+nbody.cpp:94:20: note: 	children 0x36b8278
+nbody.cpp:94:20: note: node 0x36b8278 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _507 = _514 + _511;
+nbody.cpp:94:20: note: 	stmt 0 _507 = _514 + _511;
+nbody.cpp:94:20: note: 	stmt 1 _502 = _505 + _503;
+nbody.cpp:94:20: note: 	children 0x36b82f8 0x36b8378
+nbody.cpp:94:20: note: node 0x36b82f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _514 = _515->x;
+nbody.cpp:94:20: note: 	stmt 0 _514 = _515->x;
+nbody.cpp:94:20: note: 	stmt 1 _505 = _515->y;
+nbody.cpp:94:20: note: node 0x36b8378 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _511 = _513 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: 	stmt 0 _511 = _513 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: 	stmt 1 _503 = _504 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: 	children 0x36b83f8 0x36b8478
+nbody.cpp:94:20: note: node 0x36b83f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _513 = _515->vx;
+nbody.cpp:94:20: note: 	stmt 0 _513 = _515->vx;
+nbody.cpp:94:20: note: 	stmt 1 _504 = _515->vy;
+nbody.cpp:94:20: note: node (constant) 0x36b8478 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ 9.99999977648258209228515625e-3, 9.99999977648258209228515625e-3 }
+nbody.cpp:94:20: note: Cost model analysis: 
+nbody.cpp:94:20: note: Cost model analysis for part in loop 3:
+  Vector cost: 96
+  Scalar cost: 160
+nbody.cpp:94:20: note: Basic block will be vectorized using SLP
+nbody.cpp:94:20: note: Vectorizing SLP tree:
+nbody.cpp:94:20: note: node 0x36b7df8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_451] = _449;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_451] = _449;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_451 + 4B] = _447;
+nbody.cpp:94:20: note: 	children 0x36b7e78
+nbody.cpp:94:20: note: node 0x36b7e78 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op: VEC_PERM_EXPR
+nbody.cpp:94:20: note: 	stmt 0 _449 = BIT_FIELD_REF <vect__322.359_454, 32, 0>;
+nbody.cpp:94:20: note: 	stmt 1 _447 = BIT_FIELD_REF <vect__322.359_454, 32, 32>;
+nbody.cpp:94:20: note: 	lane permutation { 0[0] 0[1] }
+nbody.cpp:94:20: note: 	children 0x36b7ef8
+nbody.cpp:94:20: note: node (external) 0x36b7ef8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ }
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _449 = BIT_FIELD_REF <vect__322.359_454, 32, 0>;
+nbody.cpp:94:20: note: vectorizing permutation op0[0] op0[1] (repeat 2)
+
+nbody.cpp:94:20: note: vectorizing permutation op0[0] op0[1] (repeat 2)
+
+nbody.cpp:94:20: note: as vops0[0][0] vops0[0][1], vops0[0][2] vops0[0][3], vops0[0][4] vops0[0][5]
+nbody.cpp:94:20: note: add new stmt: _327 = vect__322.359_454;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: MEM[(float *)ivtmp_451] = _449;
+nbody.cpp:94:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__322.359_454, 32, 0>, type of def: internal
+nbody.cpp:94:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__322.359_454, 32, 32>, type of def: internal
+nbody.cpp:94:20: note: transform store. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: MEM[(float *)ivtmp_451]
+nbody.cpp:94:20: note: created vectp.364_328
+nbody.cpp:94:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.364_328] = _327;
+nbody.cpp:94:20: note: vectorizing stmts using SLP.
+nbody.cpp:94:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:94:20: note: Vectorizing SLP tree:
+nbody.cpp:94:20: note: node 0x36b7ff8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: MEM[(float *)ivtmp_443] = _442;
+nbody.cpp:94:20: note: 	stmt 0 MEM[(float *)ivtmp_443] = _442;
+nbody.cpp:94:20: note: 	stmt 1 MEM[(float *)ivtmp_443 + 4B] = _440;
+nbody.cpp:94:20: note: 	children 0x36b80f8
+nbody.cpp:94:20: note: node (external) 0x36b80f8 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ _442, _440 }
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: MEM[(float *)ivtmp_443] = _442;
+nbody.cpp:94:20: note: vect_is_simple_use: operand BIT_FIELD_REF <vect__322.359_452, 32, 0>, type of def: internal
+nbody.cpp:94:20: note: transform store. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: MEM[(float *)ivtmp_443]
+nbody.cpp:94:20: note: created vectp.366_436
+nbody.cpp:94:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.366_436] = _330;
+nbody.cpp:94:20: note: vectorizing stmts using SLP.
+nbody.cpp:94:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:94:20: note: Vectorizing SLP tree:
+nbody.cpp:94:20: note: node 0x36b81f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _515->x = _507;
+nbody.cpp:94:20: note: 	stmt 0 _515->x = _507;
+nbody.cpp:94:20: note: 	stmt 1 _515->y = _502;
+nbody.cpp:94:20: note: 	children 0x36b8278
+nbody.cpp:94:20: note: node 0x36b8278 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _507 = _514 + _511;
+nbody.cpp:94:20: note: 	stmt 0 _507 = _514 + _511;
+nbody.cpp:94:20: note: 	stmt 1 _502 = _505 + _503;
+nbody.cpp:94:20: note: 	children 0x36b82f8 0x36b8378
+nbody.cpp:94:20: note: node 0x36b82f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _514 = _515->x;
+nbody.cpp:94:20: note: 	stmt 0 _514 = _515->x;
+nbody.cpp:94:20: note: 	stmt 1 _505 = _515->y;
+nbody.cpp:94:20: note: node 0x36b8378 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _511 = _513 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: 	stmt 0 _511 = _513 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: 	stmt 1 _503 = _504 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: 	children 0x36b83f8 0x36b8478
+nbody.cpp:94:20: note: node 0x36b83f8 (max_nunits=2, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: op template: _513 = _515->vx;
+nbody.cpp:94:20: note: 	stmt 0 _513 = _515->vx;
+nbody.cpp:94:20: note: 	stmt 1 _504 = _515->vy;
+nbody.cpp:94:20: note: node (constant) 0x36b8478 (max_nunits=1, refcnt=1) vector(2) float
+nbody.cpp:94:20: note: 	{ 9.99999977648258209228515625e-3, 9.99999977648258209228515625e-3 }
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _514 = _515->x;
+nbody.cpp:94:20: note: transform load. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _515->x
+nbody.cpp:94:20: note: created vectp.368_541
+nbody.cpp:94:20: note: add new stmt: vect__514.369_376 = MEM <vector(2) float> [(float *)vectp.368_541];
+nbody.cpp:94:20: note: add new stmt: vectp.368_375 = vectp.368_541 + 16;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _513 = _515->vx;
+nbody.cpp:94:20: note: transform load. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _515->vx
+nbody.cpp:94:20: note: created vectp.371_374
+nbody.cpp:94:20: note: add new stmt: vect__513.372_464 = MEM <vector(2) float> [(float *)vectp.371_374];
+nbody.cpp:94:20: note: add new stmt: vectp.371_470 = vectp.371_374 + 16;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _511 = _513 * 9.99999977648258209228515625e-3;
+nbody.cpp:94:20: note: vect_is_simple_use: operand _515->vx, type of def: internal
+nbody.cpp:94:20: note: transform binary/unary operation.
+nbody.cpp:94:20: note: add new stmt: vect__511.373_475 = vect__513.372_464 * { 9.99999977648258209228515625e-3, 9.99999977648258209228515625e-3 };
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _507 = _514 + _511;
+nbody.cpp:94:20: note: vect_is_simple_use: operand _515->x, type of def: internal
+nbody.cpp:94:20: note: vect_is_simple_use: operand _513 * 9.99999977648258209228515625e-3, type of def: internal
+nbody.cpp:94:20: note: transform binary/unary operation.
+nbody.cpp:94:20: note: add new stmt: vect__507.374_481 = vect__514.369_376 + vect__511.373_475;
+nbody.cpp:94:20: note: ------>vectorizing SLP node starting from: _515->x = _507;
+nbody.cpp:94:20: note: vect_is_simple_use: operand _514 + _511, type of def: internal
+nbody.cpp:94:20: note: vect_is_simple_use: operand _505 + _503, type of def: internal
+nbody.cpp:94:20: note: transform store. ncopies = 1
+nbody.cpp:94:20: note: create vector_type-pointer variable to type: vector(2) float  vectorizing a pointer ref: _515->x
+nbody.cpp:94:20: note: created vectp.376_9
+nbody.cpp:94:20: note: add new stmt: MEM <vector(2) float> [(float *)vectp.376_9] = vect__507.374_481;
+nbody.cpp:94:20: note: vectorizing stmts using SLP.
+nbody.cpp:94:20: optimized: basic block part vectorized using 32 byte vectors
+nbody.cpp:94:20: note: ***** The result for vector mode V32QI would be the same
+BB 37 is always executed in loop 3
+BB 39 is always executed in loop 11
+BB 8 is always executed in loop 1
+BB 6 is always executed in loop 4
+loop 3's coldest_outermost_loop is 3, hotter_than_inner_loop is NULL
+loop 11's coldest_outermost_loop is 3, hotter_than_inner_loop is NULL
+loop 1's coldest_outermost_loop is 1, hotter_than_inner_loop is NULL
+loop 4's coldest_outermost_loop is 4, hotter_than_inner_loop is NULL
+nbody.cpp:93:22: note: considering unrolling loop 11 at BB 33
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+nbody.cpp:174:5: note: considering unrolling loop 3 at BB 29
+nbody.cpp:148:5: note: considering unrolling loop 1 at BB 10
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
+/usr/include.original/c++/13/bits/random.tcc:333:32: note: considering unrolling loop 4 at BB 7
+considering unrolling loop with constant number of iterations
+considering unrolling loop with runtime-computable number of iterations
